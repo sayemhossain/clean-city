@@ -19,15 +19,15 @@ const HomeBanner = () => {
     cssEase: "linear",
   };
   return (
-    <div className="md:px-20">
+    <div className="md:px-20 max-w-[1440px] mx-auto">
       <div>
         <Slider {...settings}>
           <div className="md:px-5">
-            <div className="md:flex justify-between h-[450px] items-center text-gray-800">
+            <div className="md:flex justify-between h-[450px] items-center text-gray-800 gap-5">
               <div>
                 <h1 className="text-4xl mb-2 font-semibold">
-                  <span className="text-2xl text-secondary">Rececle Today</span>{" "}
-                  <br /> For A Better Tomorrow
+                  <span className="">Rececle Today</span> <br /> For A Better
+                  Tomorrow
                 </h1>
                 <p>
                   Recycling is a key component of modern waste reduction and is
@@ -47,7 +47,7 @@ const HomeBanner = () => {
             </div>
           </div>
           <div className="md:px-5">
-            <div className="md:flex justify-between h-[450px] items-center text-gray-800">
+            <div className="md:flex justify-between h-[450px] items-center text-gray-800 gap-5">
               <div>
                 <h1 className="text-4xl mb-2  font-semibold">
                   <span className="text-2xl text-secondary">Waste</span> <br />{" "}
@@ -71,7 +71,7 @@ const HomeBanner = () => {
             </div>
           </div>
           <div className="md:px-5">
-            <div className="md:flex justify-between h-[450px] items-center text-gray-800">
+            <div className="md:flex justify-between h-[450px] items-center text-gray-800 gap-5">
               <div>
                 <h1 className="text-4xl mb-2  font-semibold">
                   <span className="text-2xl text-secondary">Discover</span>{" "}
