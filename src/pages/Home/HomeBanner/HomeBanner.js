@@ -19,20 +19,20 @@ const HomeBanner = () => {
     cssEase: "linear",
   };
   return (
-    <div className="md:px-28 ">
+    <div className="md:px-20">
       <div>
         <Slider {...settings}>
           <div className="md:px-5">
-            <div className="flex justify-between h-[450px] items-center">
+            <div className="flex justify-between h-[450px] items-center text-gray-800">
               <div>
-                <h1 className="text-4xl mb-2">
+                <h1 className="text-4xl mb-2 font-semibold">
                   Rececle Today <br /> For A Better Tomorrow
                 </h1>
                 <p>
                   Recycling is a key component of modern waste reduction and is
                   the third component of the “Reduce.
                 </p>
-                <button className="btn btn-secondary rounded-none text-white mt-7">
+                <button className="btn btn-secondary rounded-none text-white mt-10">
                   Discover More
                 </button>
               </div>
@@ -46,14 +46,16 @@ const HomeBanner = () => {
             </div>
           </div>
           <div className="md:px-5">
-            <div className="flex justify-between h-[450px] items-center">
+            <div className="flex justify-between h-[450px] items-center text-gray-800">
               <div>
-                <h1 className="text-4xl mb-2">Waste Management</h1>
+                <h1 className="text-4xl mb-2  font-semibold">
+                  Waste Management
+                </h1>
                 <p>
                   Recycling is a key component of modern waste reduction and is
                   the third component of the “Reduce.
                 </p>
-                <button className="btn btn-secondary rounded-none text-white mt-7">
+                <button className="btn btn-secondary rounded-none text-white mt-10">
                   Discover More
                 </button>
               </div>
@@ -67,14 +69,16 @@ const HomeBanner = () => {
             </div>
           </div>
           <div className="md:px-5">
-            <div className="flex justify-between h-[450px] items-center">
+            <div className="flex justify-between h-[450px] items-center text-gray-800">
               <div>
-                <h1 className="text-4xl mb-2">Discover Services</h1>
+                <h1 className="text-4xl mb-2  font-semibold">
+                  Discover Services
+                </h1>
                 <p>
                   Recycling is a key component of modern waste reduction and is
                   the third component of the “Reduce.
                 </p>
-                <button className="btn btn-secondary rounded-none text-white mt-7">
+                <button className="btn btn-secondary rounded-none text-white mt-10">
                   Discover More
                 </button>
               </div>
