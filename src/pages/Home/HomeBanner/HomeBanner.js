@@ -23,10 +23,11 @@ const HomeBanner = () => {
       <div>
         <Slider {...settings}>
           <div className="md:px-5">
-            <div className="flex justify-between h-[450px] items-center text-gray-800">
+            <div className="md:flex justify-between h-[450px] items-center text-gray-800">
               <div>
                 <h1 className="text-4xl mb-2 font-semibold">
-                  Rececle Today <br /> For A Better Tomorrow
+                  <span className="text-2xl text-secondary">Rececle Today</span>{" "}
+                  <br /> For A Better Tomorrow
                 </h1>
                 <p>
                   Recycling is a key component of modern waste reduction and is
@@ -46,10 +47,11 @@ const HomeBanner = () => {
             </div>
           </div>
           <div className="md:px-5">
-            <div className="flex justify-between h-[450px] items-center text-gray-800">
+            <div className="md:flex justify-between h-[450px] items-center text-gray-800">
               <div>
                 <h1 className="text-4xl mb-2  font-semibold">
-                  Waste Management
+                  <span className="text-2xl text-secondary">Waste</span> <br />{" "}
+                  Management
                 </h1>
                 <p>
                   Recycling is a key component of modern waste reduction and is
@@ -69,10 +71,11 @@ const HomeBanner = () => {
             </div>
           </div>
           <div className="md:px-5">
-            <div className="flex justify-between h-[450px] items-center text-gray-800">
+            <div className="md:flex justify-between h-[450px] items-center text-gray-800">
               <div>
                 <h1 className="text-4xl mb-2  font-semibold">
-                  Discover Services
+                  <span className="text-2xl text-secondary">Discover</span>{" "}
+                  <br /> our all Services
                 </h1>
                 <p>
                   Recycling is a key component of modern waste reduction and is
