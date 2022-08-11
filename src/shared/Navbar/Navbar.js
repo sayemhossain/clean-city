@@ -5,7 +5,9 @@ import SupNavbar from "./SupNavbar";
 const Navbar = () => {
   return (
     <div className="shadow-lg ">
-      <SupNavbar></SupNavbar>
+      <div className="hidden md:block">
+        <SupNavbar></SupNavbar>
+      </div>
       <div class="navbar bg-base-100 md:py-5 md:px-16">
         <div class="navbar-start">
           <div class="dropdown">
