@@ -26,7 +26,7 @@ const HomeBanner = () => {
             <div className="md:flex justify-between h-[450px] items-center text-gray-800">
               <div>
                 <h1 className="text-4xl mb-2 font-semibold">
-                  <span className="text-2xl text-secondary">Rececle Today</span>{" "}
+                  <span className="text-2xl text-secondary">Rececle Toda</span>{" "}
                   <br /> For A Better Tomorrow
                 </h1>
                 <p>
