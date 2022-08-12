@@ -5,9 +5,9 @@ import ourMissionImg from "../../../img/ourMission.jpg";
 
 const OurMission = () => {
   return (
-    <div className="md:mt-10">
-      <div className="grid grid-cols-2 gap-5">
-        <div>
+    <div className="md:mt-12">
+      <div className="md:grid grid-cols-2 gap-5">
+        <div className="">
           <img className="rounded-sm" src={ourMissionImg} alt="" />
         </div>
         <div className="mt-3">
@@ -17,28 +17,28 @@ const OurMission = () => {
             awareness.
           </p>
           <div className="mt-5">
-            <p>
+            <p className="text-sm">
               <FontAwesomeIcon
                 className="text-secondary"
                 icon={faCircleCheck}
               ></FontAwesomeIcon>{" "}
               Reduce reuse recycle.
             </p>
-            <p className="my-3">
+            <p className="my-4 text-sm">
               <FontAwesomeIcon
                 className="text-secondary"
                 icon={faCircleCheck}
               ></FontAwesomeIcon>{" "}
               Reuse it or Lose it.
             </p>
-            <p>
+            <p className="text-sm">
               <FontAwesomeIcon
                 className="text-secondary"
                 icon={faCircleCheck}
               ></FontAwesomeIcon>{" "}
               Think outside the trash…Recycle!
             </p>
-            <p className="my-3">
+            <p className="my-4 text-sm">
               <FontAwesomeIcon
                 className="text-secondary"
                 icon={faCircleCheck}

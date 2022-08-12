@@ -4,7 +4,7 @@ import logo from "../../img/logo.svg";
 import SupNavbar from "./SupNavbar";
 const Navbar = () => {
   return (
-    <div className="shadow-lg ">
+    <div className="shadow-lg">
       <div className="hidden md:block">
         <SupNavbar></SupNavbar>
       </div>
