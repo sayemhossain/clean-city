@@ -5,7 +5,7 @@ import CustomLinkTwo from "../../../shared/CustomLinkTwo/CustomLinkTwo";
 
 const WhyUs = () => {
   return (
-    <div className="md:px-28 md:py-10">
+    <div className="md:px-28 md:py-10 max-w-[1440px] mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <div>
           <h1 className="text-4xl font-bold">
