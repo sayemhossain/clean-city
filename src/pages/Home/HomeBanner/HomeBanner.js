@@ -39,7 +39,7 @@ const HomeBanner = () => {
               </div>
               <div className="">
                 <img
-                  className="w-[650px] h-[350px] rounded-2xl shadow-lg"
+                  className="w-[650px] h-[350px] rounded-xl shadow-lg"
                   src={banner3}
                   alt=""
                 />
@@ -63,7 +63,7 @@ const HomeBanner = () => {
               </div>
               <div className="">
                 <img
-                  className="w-[650px] h-[350px] rounded-2xl shadow-lg"
+                  className="w-[650px] h-[350px] rounded-xl shadow-lg"
                   src={banner2}
                   alt=""
                 />
@@ -87,7 +87,7 @@ const HomeBanner = () => {
               </div>
               <div className="">
                 <img
-                  className="w-[650px] h-[350px] rounded-2xl shadow-lg"
+                  className="w-[650px] h-[350px] rounded-xl shadow-lg"
                   src={banner}
                   alt=""
                 />
