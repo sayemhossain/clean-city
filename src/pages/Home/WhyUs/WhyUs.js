@@ -6,7 +6,7 @@ import CustomLinkTwo from "../../../shared/CustomLinkTwo/CustomLinkTwo";
 const WhyUs = () => {
   return (
     <div className="md:px-28 md:py-10">
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid grid-cols-1  md:grid-cols-2 gap-10">
         <div>
           <h1 className="text-4xl font-bold">
             Few Reasons Why You Choose Us To Protect Nature!
@@ -28,9 +28,9 @@ const WhyUs = () => {
                 </CustomLinkTwo>
                 <CustomLinkTwo
                   className="uppercase px-2 py-2 text-center font-semibold"
-                  to="/"
+                  to="/ourhistory"
                 >
-                  Our Mission
+                  Our History
                 </CustomLinkTwo>
               </div>
             </nav>
@@ -38,7 +38,7 @@ const WhyUs = () => {
           </div>
         </div>
         <div>
-          <img src={whyUsImg} alt="" />
+          <img className="w-full rounded-2xl shadow-xl" src={whyUsImg} alt="" />
         </div>
       </div>
     </div>
