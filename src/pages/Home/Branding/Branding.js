@@ -41,8 +41,7 @@ const Branding = () => {
           <img className="w-14 mx-auto" src={photo1} alt="" />
           <h2 className="mt-5 mb-2 font-semibold text-secondary">Recycling</h2>
           <p>
-            We dispose of your waste in the most eco-friendly ways for the
-            earth.
+            We dispose of your waste in the most eco-friendly wys for the earth.
           </p>
         </div>
       </div>
