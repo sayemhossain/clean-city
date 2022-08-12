@@ -20,7 +20,9 @@ const Branding = () => {
         </div>
         <div className="text-center shadow-lg rounded-xl p-3">
           <img className="w-14 mx-auto" src={photo2} alt="" />
-          <h2 className="mt-5 mb-2 font-semibold">Moving Help</h2>
+          <h2 className="mt-5 mb-2 font-semibold text-secondary">
+            Moving Help
+          </h2>
           <p>
             Are you Look for authorised recycler of your electronic items waste
             here!
@@ -28,14 +30,16 @@ const Branding = () => {
         </div>
         <div className="text-center shadow-lg rounded-xl p-3">
           <img className="w-14 mx-auto" src={photo3} alt="" />
-          <h2 className="mt-5 mb-2 font-semibold">Waste Collection</h2>
+          <h2 className="mt-5 mb-2 font-semibold text-secondary">
+            Waste Collection
+          </h2>
           <p>
             We dispose most industrial item's waste appropriately and neatly.
           </p>
         </div>
         <div className="text-center shadow-lg rounded-xl p-3">
           <img className="w-14 mx-auto " src={photo4} alt="" />
-          <h2 className="mt-5 mb-2 font-semibold">Recycling</h2>
+          <h2 className="mt-5 mb-2 font-semibold text-secondary">Recycling</h2>
           <p>
             We dispose of your waste in the most eco-friendly ways for the
             earth.

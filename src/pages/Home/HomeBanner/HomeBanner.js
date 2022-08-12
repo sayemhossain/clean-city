@@ -19,15 +19,15 @@ const HomeBanner = () => {
     cssEase: "linear",
   };
   return (
-    <div className="md:px-20 max-w-[1440px] mx-auto">
+    <div className="md:px-20 max-w-[1440px] mx-auto mt-5">
       <div>
         <Slider {...settings}>
           <div className="md:px-5">
             <div className="md:flex justify-between h-[450px] items-center text-gray-800 gap-5">
               <div>
                 <h1 className="text-4xl mb-2 font-semibold">
-                  <span className="">Rececle Today</span> <br /> For A Better
-                  Tomorrow
+                  <span className="text-2xl text-secondary">Rececle Today</span>{" "}
+                  <br /> For A Better Tomorrow
                 </h1>
                 <p>
                   Recycling is a key component of modern waste reduction and is
