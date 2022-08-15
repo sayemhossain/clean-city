@@ -68,7 +68,7 @@ const Navbar = () => {
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal p-0 font-semibold">
             <li>
-              <a>Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li tabindex="0">
               <a>
@@ -93,7 +93,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <a>Blogs</a>
+              <Link to="/blogs">Blogs</Link>
             </li>
             <li>
               <a>Contact</a>
