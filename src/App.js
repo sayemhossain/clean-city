@@ -9,6 +9,7 @@ import OurMission from "./pages/Home/WhyUs/OurMission";
 import OurVision from "./pages/Home/WhyUs/OurVision";
 import Footer from "./shared/Footer/Footer";
 import Navbar from "./shared/Navbar/Navbar";
+import Signup from "./shared/Signup/Signup";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="/about" element={<About></About>}></Route>
+        <Route path="/signup" element={<Signup></Signup>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
