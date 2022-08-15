@@ -23,10 +23,12 @@ const HomeBanner = () => {
       <div>
         <Slider {...settings}>
           <div className="md:px-5">
-            <div className="md:flex justify-between h-[450px] items-center text-gray-800 gap-5">
+            <div className="md:flex justify-between md:h-[450px] items-center text-gray-800 gap-5">
               <div>
-                <h1 className="text-4xl mb-2 font-semibold">
-                  <span className="text-2xl text-secondary">Rececle Today</span>{" "}
+                <h1 className="text-2xl md:text-4xl mb-2 font-semibold">
+                  <span className="text-sm md:text-2xl text-secondary">
+                    Rececle Today
+                  </span>{" "}
                   <br /> For A Better Tomorrow
                 </h1>
                 <p>
@@ -37,7 +39,7 @@ const HomeBanner = () => {
                   Discover More
                 </button>
               </div>
-              <div className="">
+              <div className="mt-5 md:mt-0">
                 <img
                   className="w-[650px] h-[350px] rounded-xl shadow-lg"
                   src={banner3}
@@ -47,11 +49,13 @@ const HomeBanner = () => {
             </div>
           </div>
           <div className="md:px-5">
-            <div className="md:flex justify-between h-[450px] items-center text-gray-800 gap-5">
+            <div className="md:flex justify-between md:h-[450px] items-center text-gray-800 gap-5">
               <div>
-                <h1 className="text-4xl mb-2  font-semibold">
-                  <span className="text-2xl text-secondary">Waste</span> <br />{" "}
-                  Management
+                <h1 className="text-2xl md:text-4xl mb-2  font-semibold">
+                  <span className="text-sm md:text-2xl text-secondary">
+                    Waste
+                  </span>{" "}
+                  <br /> Management
                 </h1>
                 <p>
                   Recycling is a key component of modern waste reduction and is
@@ -61,7 +65,7 @@ const HomeBanner = () => {
                   Discover More
                 </button>
               </div>
-              <div className="">
+              <div className="mt-5 md:mt-0">
                 <img
                   className="w-[650px] h-[350px] rounded-xl shadow-lg"
                   src={banner2}
@@ -71,10 +75,12 @@ const HomeBanner = () => {
             </div>
           </div>
           <div className="md:px-5">
-            <div className="md:flex justify-between h-[450px] items-center text-gray-800 gap-5">
+            <div className="md:flex justify-between md:h-[450px] items-center text-gray-800 gap-5">
               <div>
-                <h1 className="text-4xl mb-2  font-semibold">
-                  <span className="text-2xl text-secondary">Discover</span>{" "}
+                <h1 className=" text-2xl md:text-4xl mb-2  font-semibold">
+                  <span className="text-sm md:text-2xl text-secondary">
+                    Discover
+                  </span>{" "}
                   <br /> our all Services
                 </h1>
                 <p>
@@ -85,7 +91,7 @@ const HomeBanner = () => {
                   Discover More
                 </button>
               </div>
-              <div className="">
+              <div className="mt-5 md:mt-0">
                 <img
                   className="w-[650px] h-[350px] rounded-xl shadow-lg"
                   src={banner}
