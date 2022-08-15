@@ -104,9 +104,12 @@ const Navbar = () => {
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="border-2 border-gray-800 rounded-full py-1.5 px-7 hidden md:block mr-5 font-semibold hover:bg-secondary hover:text-white duration-300 hover:border-secondary hover:cursor-pointer">
+          <Link
+            to="/login"
+            class="border-2 border-gray-800 rounded-full py-1.5 px-7 hidden md:block mr-5 font-semibold hover:bg-secondary hover:text-white duration-300 hover:border-secondary hover:cursor-pointer"
+          >
             Login
-          </a>
+          </Link>
           <Link
             to="/signup"
             class="bg-secondary text-white rounded-full py-2 px-7 hover:cursor-pointer"

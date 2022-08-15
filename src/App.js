@@ -8,6 +8,7 @@ import OurHistory from "./pages/Home/WhyUs/OurHistory";
 import OurMission from "./pages/Home/WhyUs/OurMission";
 import OurVision from "./pages/Home/WhyUs/OurVision";
 import Footer from "./shared/Footer/Footer";
+import Login from "./shared/Login/Login";
 import Navbar from "./shared/Navbar/Navbar";
 import Signup from "./shared/Signup/Signup";
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="/about" element={<About></About>}></Route>
+        <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signup" element={<Signup></Signup>}></Route>
       </Routes>
       <Footer></Footer>

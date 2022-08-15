@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../../img/logo.svg";
 import googleLogo from "../../img/google.svg";
 
-const Signup = () => {
+const Login = () => {
   return (
     <div>
       <div className="flex justify-center items-center px-5 md:px-28 my-10">
@@ -12,7 +12,7 @@ const Signup = () => {
             <div className="mb-5">
               <img className="w-20 mx-auto" src={logo} alt="" />
               <h1 className="text-center mt-2 text-2xl font-bold">
-                Create New Account
+                Welcome Back
               </h1>
             </div>
             <div className="w-full shadow-md rounded-md p-2.5 flex items-center justify-center gap-3">
@@ -24,32 +24,6 @@ const Signup = () => {
           <div className="">
             <form action="">
               <div>
-                <div className="flex gap-2">
-                  <div class="form-control">
-                    <label class="label">
-                      <span class="label-text">Full Name</span>
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      required
-                      placeholder="Your Full Name"
-                      class="input input-bordered rounded-md w-full"
-                    />
-                  </div>
-                  <div class="form-control">
-                    <label class="label">
-                      <span class="label-text">Phone number</span>
-                    </label>
-                    <input
-                      type="text"
-                      name="number"
-                      required
-                      placeholder="Your Phone number"
-                      class="input input-md rounded-md input-bordered w-full"
-                    />
-                  </div>
-                </div>
                 <div class="form-control">
                   <label class="label">
                     <span class="label-text">Email address</span>
@@ -74,7 +48,7 @@ const Signup = () => {
                 </div>
                 <div>
                   <button className="btn w-full mt-5 rounded-md btn-secondary text-white">
-                    Sign Up
+                    Sign In
                   </button>
                 </div>
               </div>
@@ -82,9 +56,9 @@ const Signup = () => {
           </div>
           <div className="text-center mt-2">
             <p className="text-sm">
-              Already have an account?{" "}
-              <Link className="text-secondary underline" to="/login">
-                Login here
+              New in Clean City?{" "}
+              <Link className="text-secondary underline" to="/signup">
+                Signup here
               </Link>
             </p>
           </div>
@@ -94,4 +68,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Login;
