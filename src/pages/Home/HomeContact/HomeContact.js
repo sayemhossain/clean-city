@@ -58,7 +58,7 @@ const HomeContact = () => {
                 ></textarea>
               </div>
               <div>
-                <button className="btn w-full mt-5 btn-secondary text-white">
+                <button className="btn w-full mt-5 rounded-none btn-secondary text-white">
                   Submit Request
                 </button>
               </div>
