@@ -1,5 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../../img/logo.svg";
+import googleLogo from "../../img/google.svg";
+
 const Signup = () => {
   return (
     <div>
@@ -12,7 +15,8 @@ const Signup = () => {
                 Create New Account
               </h1>
             </div>
-            <div className="w-full shadow-md rounded-md p-2.5 text-center">
+            <div className="w-full shadow-md rounded-md p-2.5 flex items-center justify-center gap-3">
+              <img src={googleLogo} alt="" />
               <p className="">Continue With Google</p>
             </div>
           </div>
@@ -75,6 +79,14 @@ const Signup = () => {
                 </div>
               </div>
             </form>
+          </div>
+          <div className="text-center mt-2">
+            <p className="text-sm">
+              Already have an account?{" "}
+              <Link className="text-secondary underline" to="/">
+                Login here
+              </Link>
+            </p>
           </div>
         </div>
       </div>
