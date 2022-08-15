@@ -19,7 +19,7 @@ const HomeBanner = () => {
     cssEase: "linear",
   };
   return (
-    <div className="md:px-20 max-w-[1440px] mx-auto mt-5">
+    <div className="md:px-20 max-w-[1440px] mx-auto mt-5 px-5">
       <div>
         <Slider {...settings}>
           <div className="md:px-5">

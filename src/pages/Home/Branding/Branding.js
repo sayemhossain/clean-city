@@ -6,7 +6,7 @@ import photo4 from "../../../img/ads-img/photo4.svg";
 
 const Branding = () => {
   return (
-    <div className="md:px-28 md:my-10 max-w-[1440px] mx-auto">
+    <div className="md:px-28 px-5 my-10 max-w-[1440px] mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
         <div className="text-center shadow-lg rounded-xl p-4 bg-primary hover:shadow-md duration-300">
           <img className="w-14 mx-auto " src={photo4} alt="" />
