@@ -6,7 +6,7 @@ const HomeContact = () => {
       <h1 className="text-3xl font-bold text-center md:my-16 ">Contact</h1>
       <div className="flex gap-5">
         <div>
-          <img className="md:w-[500px]" src={contactImg} alt="" />
+          <img className="md:w-[550px]" src={contactImg} alt="" />
         </div>
         <div className="bg-[#F9F8FE] flex-grow rounded-lg shadow-md">
           <form action="">
