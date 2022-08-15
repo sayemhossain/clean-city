@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Garbage Pickup",
+        "img": "https://drive.google.com/uc?export=view&id=16Y0pQUv9Ft69NUq3mBLvFNJndQS83i1v",
+        "des": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti a est veniam libero laboriosam hic expedita repellat, dolorem porro quaerat laudantium, corporis exercitationem? Error sequi autem recusandae hic animi, impedit odio sint, ab excepturi quaerat illum vero laudantium non sit nesciunt mollitia. Dolores porro perspiciatis repellat quos vel ipsum beatae.",
+        "category": "Industrial"
+    },
+    {
+        "name": "Organic Waste",
+        "img": "https://drive.google.com/uc?export=view&id=1ejNGh7MVrxnfJ_ztcTtVHEMbuXPqGhWs",
+        "des": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti a est veniam libero laboriosam hic expedita repellat, dolorem porro quaerat laudantium, corporis exercitationem? Error sequi autem recusandae hic animi, impedit odio sint, ab excepturi quaerat illum vero laudantium non sit nesciunt mollitia. Dolores porro perspiciatis repellat quos vel ipsum beatae.",
+        "category": "Food Waste"
+    },
+    {
+        "name": "Essie Patterson",
+        "img": "https://drive.google.com/uc?export=view&id=1tj1O1qbF6MgJdzsQFRA40LMc8aMFDXzK",
+        "des": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti a est veniam libero laboriosam hic expedita repellat, dolorem porro quaerat laudantium, corporis exercitationem? Error sequi autem recusandae hic animi, impedit odio sint, ab excepturi quaerat illum vero laudantium non sit nesciunt mollitia. Dolores porro perspiciatis repellat quos vel ipsum beatae.",
+        "category": "Industrial"
+    },
+    {
+        "name": "Demolition Waste",
+        "img": "https://drive.google.com/uc?export=view&id=1JV2gzhu5v8RCNuwBKOh61UujV5fCENVa",
+        "des": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti a est veniam libero laboriosam hic expedita repellat, dolorem porro quaerat laudantium, corporis exercitationem? Error sequi autem recusandae hic animi, impedit odio sint, ab excepturi quaerat illum vero laudantium non sit nesciunt mollitia. Dolores porro perspiciatis repellat quos vel ipsum beatae.",
+        "category": "Municipality"
+    },
+    {
+        "name": "Medical and Hospital",
+        "img": "https://drive.google.com/uc?export=view&id=1kpXB2_Mye6zb5nzrQAHSQ9QQWdG1gq8G",
+        "des": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti a est veniam libero laboriosam hic expedita repellat, dolorem porro quaerat laudantium, corporis exercitationem? Error sequi autem recusandae hic animi, impedit odio sint, ab excepturi quaerat illum vero laudantium non sit nesciunt mollitia. Dolores porro perspiciatis repellat quos vel ipsum beatae.",
+        "category": "Commercial"
+    },
+    {
+        "name": "Residential Recycling",
+        "img": "https://drive.google.com/uc?export=view&id=1q-b9UloVoFrANhow0X57QDc2IXYFJYJf",
+        "des": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti a est veniam libero laboriosam hic expedita repellat, dolorem porro quaerat laudantium, corporis exercitationem? Error sequi autem recusandae hic animi, impedit odio sint, ab excepturi quaerat illum vero laudantium non sit nesciunt mollitia. Dolores porro perspiciatis repellat quos vel ipsum beatae.",
+        "category": "Industrial"
+    }
+]

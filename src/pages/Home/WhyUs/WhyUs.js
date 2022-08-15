@@ -15,19 +15,19 @@ const WhyUs = () => {
             <nav>
               <div className="grid grid-cols-3 gap-5">
                 <CustomLinkTwo
-                  className="uppercase p-3 text-center font-bold"
+                  className="uppercase p-3 text-center font-semibold"
                   to="ourmission"
                 >
                   Our Mission
                 </CustomLinkTwo>
                 <CustomLinkTwo
-                  className="uppercase p-3 text-center font-bold"
+                  className="uppercase p-3 text-center font-semibold"
                   to="ourvision"
                 >
                   Our Vision
                 </CustomLinkTwo>
                 <CustomLinkTwo
-                  className="uppercase p-3 text-center font-bold"
+                  className="uppercase p-3 text-center font-semibold"
                   to="/ourhistory"
                 >
                   Our History

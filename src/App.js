@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home/Home";
 import OurHistory from "./pages/Home/WhyUs/OurHistory";
 import OurMission from "./pages/Home/WhyUs/OurMission";
 import OurVision from "./pages/Home/WhyUs/OurVision";
+import Footer from "./shared/Footer/Footer";
 import Navbar from "./shared/Navbar/Navbar";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/ourhistory" element={<OurHistory></OurHistory>}></Route>
         </Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
