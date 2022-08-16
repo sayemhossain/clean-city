@@ -2,8 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../img/logo.svg";
 import googleLogo from "../../img/google.svg";
+import {
+  useCreateUserWithEmailAndPassword,
+  useSignInWithFacebook,
+  useSignInWithGoogle,
+} from "react-firebase-hooks/auth";
+import { auth } from "../../firebase.init";
 
 const Signup = () => {
+  const [signInWithGoogle, googleUser, googleLoading, googleError] =
+    useSignInWithGoogle(auth);
+
   return (
     <div>
       <div className="flex justify-center items-center px-5 md:px-28 my-10">
@@ -15,7 +24,10 @@ const Signup = () => {
                 Create New Account
               </h1>
             </div>
-            <div className="w-full shadow-md rounded-md p-2.5 flex items-center justify-center gap-3">
+            <div
+              onClick={() => signInWithGoogle()}
+              className="w-full shadow-md rounded-md p-2.5 flex items-center justify-center gap-3"
+            >
               <img src={googleLogo} alt="" />
               <p className="">Continue With Google</p>
             </div>
