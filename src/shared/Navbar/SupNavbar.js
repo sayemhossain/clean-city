@@ -14,7 +14,7 @@ import whatsapp from "../../img/social-media/whatsapp-icon.png";
 
 const SupNavbar = () => {
   return (
-    <div className="md:px-16 py-2 text-sm">
+    <div className="md:px-16 py-2 text-sm shadow-sm mb-1">
       <div className="flex justify-between">
         <div className="flex items-center gap-3">
           <div className="flex gap-1 items-center">

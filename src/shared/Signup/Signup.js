@@ -19,6 +19,7 @@ const Signup = () => {
   const navigate = useNavigate();
 
   const [token] = useToken(user || googleUser);
+
   const handleSignup = async (e) => {
     e.preventDefault();
 
@@ -28,24 +29,24 @@ const Signup = () => {
     const fullName = firstName + " " + lastName;
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log(fullName);
+    console.log(fullName, email, password);
 
     // for update name
-    await updateProfile({ displayName: fullName });
     await createUserWithEmailAndPassword(email, password);
+    await updateProfile({ displayName: fullName });
   };
   let errorElement;
   if (error || googleError) {
     errorElement = (
       <div>
         <p>
-          <span className="text-primary ml-1">{error?.message}</span>
+          <span className="text-secondary ml-1">{error}</span>
         </p>
       </div>
     );
   }
   if (token) {
-    navigate("/dashboard");
+    navigate("/");
   }
   return (
     <div>
@@ -120,6 +121,7 @@ const Signup = () => {
                     class="input input-md rounded-md input-bordered w-full"
                   />
                 </div>
+                {errorElement}
                 <div>
                   <button className="btn w-full mt-5 rounded-md btn-secondary text-white">
                     Sign Up
