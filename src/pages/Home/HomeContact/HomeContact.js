@@ -32,7 +32,7 @@ const HomeContact = () => {
             </div>
             <div className="mt-3">
               <p>wastii@themetechmount.com</p>
-              <p className="mt-1">wastii@themetechmount.om</p>
+              <p className="mt-1">wastii@themetechmount.com</p>
             </div>
           </div>
           <div className="bg-[#faffcc] p-7 rounded-lg shadow-md">
