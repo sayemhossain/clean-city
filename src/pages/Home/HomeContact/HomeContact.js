@@ -27,7 +27,7 @@ const HomeContact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold">Email Address</h3>
-                <p className="text-sm">Sen Email</p>
+                <p className="text-sm">Send Email</p>
               </div>
             </div>
             <div className="mt-3">
