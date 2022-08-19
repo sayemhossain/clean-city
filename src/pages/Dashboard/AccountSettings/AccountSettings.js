@@ -26,7 +26,7 @@ const AccountSettings = () => {
       nationality,
       profession,
     };
-    fetch(`http://localhost:5000/user/${email}`, {
+    fetch(`https://secure-wildwood-53933.herokuapp.com/user/${email}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

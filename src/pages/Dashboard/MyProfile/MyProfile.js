@@ -10,7 +10,7 @@ const MyProfile = () => {
   const [userInfo, setUserInfo] = useState([]);
 
   const email = user?.email;
-  const url = `http://localhost:5000/user/${email}`;
+  const url = `https://secure-wildwood-53933.herokuapp.com/user/${email}`;
   console.log(url);
   useEffect(() => {
     fetch(url)
