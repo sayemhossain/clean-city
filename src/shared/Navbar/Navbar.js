@@ -85,7 +85,7 @@ const Navbar = () => {
             </li>
             <li tabindex="0">
               <a>
-                Services
+                All Product
                 <svg
                   class="fill-current"
                   xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +96,7 @@ const Navbar = () => {
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                 </svg>
               </a>
-              <ul class="p-2 bg-base-100 shadow-md w-48">
+              <ul class="p-2 bg-base-100 shadow-md w-48 z-20">
                 <li>
                   <a>Submenu 1</a>
                 </li>
@@ -105,6 +105,11 @@ const Navbar = () => {
                 </li>
               </ul>
             </li>
+            {user && (
+              <li>
+                <Link to="/dashboard">Dashboard</Link>
+              </li>
+            )}
             <li>
               <Link to="/blogs">Blogs</Link>
             </li>

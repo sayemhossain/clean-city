@@ -3,6 +3,9 @@ import "./App.css";
 import About from "./pages/About/About";
 import Blogs from "./pages/Blogs/Blogs";
 import Contact from "./pages/Contact/Contact";
+import AccountSettings from "./pages/Dashboard/AccountSettings/AccountSettings";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import MyProfile from "./pages/Dashboard/MyProfile/MyProfile";
 import Home from "./pages/Home/Home/Home";
 import LetesNewsDetails from "./pages/Home/LatestNews/LetesNewsDetails";
 import OurHistory from "./pages/Home/WhyUs/OurHistory";
@@ -11,6 +14,7 @@ import OurVision from "./pages/Home/WhyUs/OurVision";
 import Footer from "./shared/Footer/Footer";
 import Login from "./shared/Login/Login";
 import Navbar from "./shared/Navbar/Navbar";
+import RequireAuth from "./shared/RequireAuth/RequireAuth";
 import Signup from "./shared/Signup/Signup";
 
 function App() {
@@ -29,6 +33,21 @@ function App() {
           path="/blogs/:blogId"
           element={<LetesNewsDetails></LetesNewsDetails>}
         ></Route>
+        <Route
+          path="/dashboard"
+          element={
+            <RequireAuth>
+              <Dashboard></Dashboard>
+            </RequireAuth>
+          }
+        >
+          <Route index element={<MyProfile></MyProfile>}></Route>
+          <Route path="myprofile" element={<MyProfile></MyProfile>}></Route>
+          <Route
+            path="accountsettings"
+            element={<AccountSettings></AccountSettings>}
+          ></Route>
+        </Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
