@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const HomeContact = () => {
   return (
-    <div className="md:px-28 my-10">
+    <div className="md:px-28 my-10 max-w-[1440px] mx-auto">
       <h1 className="text-3xl font-bold text-center md:mt-10 md:mb-10">
         Contact
       </h1>
