@@ -1,8 +1,10 @@
 import {
   faAddressCard,
+  faArrowRightFromBracket,
   faBoxesPacking,
   faBoxOpen,
   faDumpster,
+  faFileArchive,
   faFileInvoiceDollar,
   faFontAwesome,
   faHandHoldingHand,
@@ -10,19 +12,25 @@ import {
   faHome,
   faListCheck,
   faPersonArrowUpFromLine,
+  faPersonWalkingArrowLoopLeft,
   faSackDollar,
   faSliders,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { signOut } from "firebase/auth";
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet, useNavigate } from "react-router-dom";
 import { auth } from "../../firebase.init";
 
 const Dashboard = () => {
   const [user] = useAuthState(auth);
-
+  const navigate = useNavigate();
+  const logout = () => {
+    signOut(auth);
+    navigate("/");
+  };
   return (
     <div className="bg-gray-50 max-w-[1540px] mx-auto">
       <div class="drawer  drawer-mobile">
@@ -121,12 +129,12 @@ const Dashboard = () => {
               </Link>
             </li>
             <li>
-              <Link className="" to="/dashboard/accountsettings">
+              <p onClick={logout}>
                 <FontAwesomeIcon
-                  icon={faPersonArrowUpFromLine}
+                  icon={faArrowRightFromBracket}
                 ></FontAwesomeIcon>{" "}
                 Logout
-              </Link>
+              </p>
             </li>
           </ul>
         </div>
