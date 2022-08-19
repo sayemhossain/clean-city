@@ -31,8 +31,8 @@ const HomeContact = () => {
               </div>
             </div>
             <div className="mt-3">
-              <p>wastii@themetechmount.com</p>
-              <p className="mt-1">wastii@themetechmount.com</p>
+              <p>cleancity@gmail.com</p>
+              <p className="mt-1">cleancity.info@gamil.com</p>
             </div>
           </div>
           <div className="bg-[#faffcc] p-7 rounded-lg shadow-md">
@@ -49,8 +49,8 @@ const HomeContact = () => {
               </div>
             </div>
             <div className="mt-3">
-              <p>+1-202-555-0172</p>
-              <p className="mt-1">+1-202-457-9987</p>
+              <p>+880 01766069458</p>
+              <p className="mt-1">+880 01788156221</p>
             </div>
           </div>
           <div className="bg-[#F0FFFC] p-7 rounded-lg shadow-md">
@@ -67,8 +67,8 @@ const HomeContact = () => {
               </div>
             </div>
             <div className="mt-3">
-              <p>889 Newcastle Dr. Depew, NY 14043</p>
-              <p className="mt-1">8576 South St. Florence, SC 29501</p>
+              <p>Dhanmondi-32, Dhaka-1230</p>
+              <p className="mt-1">Bosila, Mohammadpur, Dhaka-1230</p>
             </div>
           </div>
         </div>

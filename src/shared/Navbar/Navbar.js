@@ -1,4 +1,10 @@
-import { faAngleDown, faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleDown,
+  faTrashCan,
+  faTrashCanArrowUp,
+  faTrashRestore,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { signOut } from "firebase/auth";
 import React from "react";
@@ -75,7 +81,11 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/">
-            <img className="w-36" src={logo} alt="" />
+            <FontAwesomeIcon
+              className="text-3xl text-secondary "
+              icon={faTrashCan}
+            ></FontAwesomeIcon>{" "}
+            <span className="text-xl uppercase font-semibold">Clean City</span>
           </Link>
         </div>
         <div class="navbar-center hidden lg:flex">

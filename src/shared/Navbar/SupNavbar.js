@@ -22,14 +22,14 @@ const SupNavbar = () => {
               className="text-secondary"
               icon={faLocation}
             ></FontAwesomeIcon>
-            <p>Loctaion : envanto hq 24 fifth, Australia</p>
+            <p>Loctaion : Dhanmondi-32, Dhaka-1230</p>
           </div>
           <div className="flex gap-1 items-center border-l-2 pl-2">
             <FontAwesomeIcon
               className="text-secondary"
               icon={faPhone}
             ></FontAwesomeIcon>
-            <p>Call Us : +18 - 2222 - 3555</p>
+            <p>Call Us : +880 01766069458</p>
           </div>
           <div className="flex gap-1 items-center border-l-2 pl-2">
             <FontAwesomeIcon

@@ -12,9 +12,10 @@ const OurMission = () => {
         </div>
         <div className="mt-3">
           <p>
-            Recycling is a key component modern waste reducation and is the
-            third component of the “Reduce, Reuse, and Recycle” waste increase
-            awareness.
+            It will save our users valuable time.It will create a job
+            place,Those who work under our platform they will get a profit.There
+            are so many people who haven’t enough time to clean their garbage in
+            that case, our worker helped them to clean out.
           </p>
           <div className="mt-5">
             <p className="text-sm">

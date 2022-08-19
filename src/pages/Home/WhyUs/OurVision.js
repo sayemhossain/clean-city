@@ -12,9 +12,10 @@ const OurVision = () => {
         </div>
         <div className="mt-3">
           <p>
-            Recycling is a key component modern waste reducation and is the
-            third component of the “Reduce, Reuse, and Recycle” waste increase
-            awareness.
+            Our main vision behind thai project is make a suitable environment
+            for us. We will help to build up internal communication between
+            users and the city corporation. It will help to clean the user’s
+            house from unwanted garbage.
           </p>
           <div className="mt-5">
             <p className="text-sm">

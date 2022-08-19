@@ -1,12 +1,17 @@
 import {
   faAddressCard,
+  faBoxesPacking,
+  faBoxOpen,
   faDumpster,
+  faFileInvoiceDollar,
   faFontAwesome,
   faHandHoldingHand,
   faHandHoldingMedical,
   faHome,
   faListCheck,
+  faPersonArrowUpFromLine,
   faSackDollar,
+  faSliders,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -92,9 +97,35 @@ const Dashboard = () => {
               </Link>
             </li>
             <li>
+              <Link className="" to="/dashboard">
+                <FontAwesomeIcon icon={faFileInvoiceDollar}></FontAwesomeIcon>
+                Payment Status
+              </Link>
+            </li>
+            <li>
+              <Link className="" to="/dashboard">
+                <FontAwesomeIcon icon={faSliders}></FontAwesomeIcon> Manage
+                Product
+              </Link>
+            </li>
+            <li>
+              <Link className="" to="/dashboard">
+                <FontAwesomeIcon icon={faBoxOpen}></FontAwesomeIcon>
+                Subscription Package
+              </Link>
+            </li>
+            <li>
               <Link className="" to="/dashboard/accountsettings">
                 <FontAwesomeIcon icon={faAddressCard}></FontAwesomeIcon> Account
                 Setting
+              </Link>
+            </li>
+            <li>
+              <Link className="" to="/dashboard/accountsettings">
+                <FontAwesomeIcon
+                  icon={faPersonArrowUpFromLine}
+                ></FontAwesomeIcon>{" "}
+                Logout
               </Link>
             </li>
           </ul>

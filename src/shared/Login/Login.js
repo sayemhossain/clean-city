@@ -10,6 +10,8 @@ import { auth } from "../../firebase.init";
 import useToken from "../../hooks/useToken";
 import { sendPasswordResetEmail } from "firebase/auth";
 import { toast, ToastContainer } from "react-toastify";
+import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Login = () => {
   const emailRef = useRef("");
@@ -63,7 +65,15 @@ const Login = () => {
         <div className="shadow-lg p-5 w-96 rounded-lg">
           <div className="mb-5">
             <div className="mb-5">
-              <img className="w-20 mx-auto" src={logo} alt="" />
+              <h3 className="text-center">
+                <FontAwesomeIcon
+                  className="text-xl text-secondary "
+                  icon={faTrashCan}
+                ></FontAwesomeIcon>{" "}
+                <span className="text-sm uppercase font-semibold">
+                  Clean City
+                </span>
+              </h3>
               <h1 className="text-center mt-2 text-2xl font-bold">
                 Welcome Back
               </h1>

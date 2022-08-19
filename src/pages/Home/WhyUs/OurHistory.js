@@ -12,9 +12,9 @@ const OurHistory = () => {
         </div>
         <div className="mt-3">
           <p>
-            Recycling is a key component modern waste reducation and is the
-            third component of the “Reduce, Reuse, and Recycle” waste increase
-            awareness.
+            We are working in a initial level right now, There are lot of things
+            we have to do. We are trying to think different types of special
+            feature and implement it in our platform.
           </p>
           <div className="mt-5">
             <p className="text-sm">

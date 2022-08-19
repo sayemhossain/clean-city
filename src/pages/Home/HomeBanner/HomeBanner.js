@@ -3,6 +3,7 @@ import banner from "../../../img/banner.jpg";
 import Slider from "react-slick";
 import banner2 from "../../../img/banner2.webp";
 import banner3 from "../../../img/banner3.jpg";
+import { Link } from "react-router-dom";
 
 const HomeBanner = () => {
   const settings = {
@@ -35,9 +36,12 @@ const HomeBanner = () => {
                   Recycling is a key component of modern waste reduction and is
                   the third component of the “Reduce.
                 </p>
-                <button className="btn btn-secondary rounded-none text-white mt-10">
+                <Link
+                  to="/blogs"
+                  className="btn btn-secondary rounded-none text-white mt-10"
+                >
                   Discover More
-                </button>
+                </Link>
               </div>
               <div className="mt-5 md:mt-0">
                 <img
@@ -61,9 +65,12 @@ const HomeBanner = () => {
                   Recycling is a key component of modern waste reduction and is
                   the third component of the “Reduce.
                 </p>
-                <button className="btn btn-secondary rounded-none text-white mt-10">
+                <Link
+                  to="/blogs"
+                  className="btn btn-secondary rounded-none text-white mt-10"
+                >
                   Discover More
-                </button>
+                </Link>
               </div>
               <div className="mt-5 md:mt-0">
                 <img
@@ -87,9 +94,12 @@ const HomeBanner = () => {
                   Recycling is a key component of modern waste reduction and is
                   the third component of the “Reduce.
                 </p>
-                <button className="btn btn-secondary rounded-none text-white mt-10">
+                <Link
+                  to="/blogs"
+                  className="btn btn-secondary rounded-none text-white mt-10"
+                >
                   Discover More
-                </button>
+                </Link>
               </div>
               <div className="mt-5 md:mt-0">
                 <img
