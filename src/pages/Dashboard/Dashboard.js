@@ -15,6 +15,7 @@ import {
   faPersonArrowUpFromLine,
   faPersonWalkingArrowLoopLeft,
   faSackDollar,
+  faShieldHalved,
   faSliders,
   faUser,
   faUsers,
@@ -153,7 +154,7 @@ const Dashboard = () => {
             </li>
             <li>
               <Link className="" to="/dashboard/alladmin">
-                <FontAwesomeIcon icon={faUsers}></FontAwesomeIcon>
+                <FontAwesomeIcon icon={faShieldHalved}></FontAwesomeIcon>
                 All Admin
               </Link>
             </li>
