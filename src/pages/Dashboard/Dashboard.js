@@ -2,18 +2,11 @@ import {
   faAddressBook,
   faAddressCard,
   faArrowRightFromBracket,
-  faBoxesPacking,
   faBoxOpen,
   faDumpster,
-  faFileArchive,
   faFileInvoiceDollar,
-  faFontAwesome,
   faHandHoldingHand,
-  faHandHoldingMedical,
-  faHome,
   faListCheck,
-  faPersonArrowUpFromLine,
-  faPersonWalkingArrowLoopLeft,
   faSackDollar,
   faShieldHalved,
   faSliders,
@@ -26,10 +19,12 @@ import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, NavLink, Outlet, useNavigate } from "react-router-dom";
 import { auth } from "../../firebase.init";
-import CustomLinkTwo from "../../shared/CustomLinkTwo/CustomLinkTwo";
+import useAdmin from "../../hooks/useAdmin";
 
 const Dashboard = () => {
   const [user] = useAuthState(auth);
+  const [admin] = useAdmin(user);
+
   const navigate = useNavigate();
   const logout = () => {
     signOut(auth);
@@ -133,12 +128,6 @@ const Dashboard = () => {
               </Link>
             </li>
             <li>
-              <Link className="" to="/dashboard/managecontact">
-                <FontAwesomeIcon icon={faAddressBook}></FontAwesomeIcon>
-                Manage Contact
-              </Link>
-            </li>
-            <li>
               <p onClick={logout}>
                 <FontAwesomeIcon
                   icon={faArrowRightFromBracket}
@@ -146,18 +135,28 @@ const Dashboard = () => {
                 Logout
               </p>
             </li>
-            <li>
-              <Link className="" to="/dashboard/alluser">
-                <FontAwesomeIcon icon={faUsers}></FontAwesomeIcon>
-                All User
-              </Link>
-            </li>
-            <li>
-              <Link className="" to="/dashboard/alladmin">
-                <FontAwesomeIcon icon={faShieldHalved}></FontAwesomeIcon>
-                All Admin
-              </Link>
-            </li>
+            {admin && (
+              <div>
+                <li>
+                  <Link className="" to="/dashboard/managecontact">
+                    <FontAwesomeIcon icon={faAddressBook}></FontAwesomeIcon>
+                    Manage Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link className="" to="/dashboard/alluser">
+                    <FontAwesomeIcon icon={faUsers}></FontAwesomeIcon>
+                    All User
+                  </Link>
+                </li>
+                <li>
+                  <Link className="" to="/dashboard/alladmin">
+                    <FontAwesomeIcon icon={faShieldHalved}></FontAwesomeIcon>
+                    All Admin
+                  </Link>
+                </li>
+              </div>
+            )}
           </ul>
         </div>
       </div>
