@@ -4,7 +4,10 @@ import About from "./pages/About/About";
 import Blogs from "./pages/Blogs/Blogs";
 import Contact from "./pages/Contact/Contact";
 import AccountSettings from "./pages/Dashboard/AccountSettings/AccountSettings";
+import AllAdmin from "./pages/Dashboard/AllAdmin/AllAdmin";
+import AllUser from "./pages/Dashboard/AllUser/AllUser";
 import Dashboard from "./pages/Dashboard/Dashboard";
+import ManageContact from "./pages/Dashboard/ManageContact/ManageContact";
 import MyProfile from "./pages/Dashboard/MyProfile/MyProfile";
 import Home from "./pages/Home/Home/Home";
 import LetesNewsDetails from "./pages/Home/LatestNews/LetesNewsDetails";
@@ -47,6 +50,12 @@ function App() {
             path="accountsettings"
             element={<AccountSettings></AccountSettings>}
           ></Route>
+          <Route
+            path="managecontact"
+            element={<ManageContact></ManageContact>}
+          ></Route>
+          <Route path="alluser" element={<AllUser></AllUser>}></Route>
+          <Route path="alladmin" element={<AllAdmin></AllAdmin>}></Route>
         </Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="/about" element={<About></About>}></Route>

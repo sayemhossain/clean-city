@@ -1,15 +1,45 @@
 import React from "react";
 import contactImg from "../../../img/contactImg.png";
 import {
-  faE,
   faEnvelopeOpen,
-  faLocation,
   faLocationDot,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { toast, ToastContainer } from "react-toastify";
 
 const HomeContact = () => {
+  const handleContact = (e) => {
+    e.preventDefault();
+
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const phone = e.target.phone.value;
+    const subject = e.target.subject.value;
+    const location = e.target.location.value;
+    const des = e.target.des.value;
+
+    const contactData = {
+      name,
+      email,
+      phone,
+      subject,
+      location,
+      des,
+    };
+    fetch(`http://localhost:5000/contact`, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(contactData),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        alert("Your Message is send..!");
+      });
+    e.target.reset();
+  };
   return (
     <div className="md:px-28 my-10 max-w-[1440px] mx-auto">
       <h1 className="text-3xl font-bold text-center md:mt-10 md:mb-10">
@@ -78,7 +108,7 @@ const HomeContact = () => {
           <img className="md:w-[550px]" src={contactImg} alt="" />
         </div>
         <div className="bg-[#F9F8FE] flex-grow rounded-lg shadow-md">
-          <form action="">
+          <form action="" onSubmit={handleContact}>
             <div className="p-7">
               <h3 className="text-2xl text-gray-600 font-bold mb-5">
                 Send Your Message
@@ -87,6 +117,7 @@ const HomeContact = () => {
                 <div>
                   <input
                     type="text"
+                    name="name"
                     placeholder="Your Name"
                     class="input w-full max-w-xs input-bordered focus:outline-secondary"
                   />
@@ -94,6 +125,7 @@ const HomeContact = () => {
                 <div>
                   <input
                     type="email"
+                    name="email"
                     placeholder="Email Address"
                     class="input w-full max-w-xs input-bordered focus:outline-secondary"
                   />
@@ -101,6 +133,7 @@ const HomeContact = () => {
                 <div>
                   <input
                     type="text"
+                    name="phone"
                     placeholder="Your Phone here"
                     class="input w-full max-w-xs input-bordered focus:outline-secondary"
                   />
@@ -108,7 +141,8 @@ const HomeContact = () => {
                 <div>
                   <input
                     type="text"
-                    placeholder="Your Inquiry"
+                    name="location"
+                    placeholder="Your Location"
                     class="input w-full max-w-xs input-bordered focus:outline-secondary"
                   />
                 </div>
@@ -116,18 +150,23 @@ const HomeContact = () => {
               <div className="mt-5">
                 <input
                   type="text"
+                  name="subject"
                   placeholder="Your Subject"
                   class="input w-full input-bordered focus:outline-secondary"
                 />
               </div>
               <div className="mt-5">
                 <textarea
+                  name="des"
                   class="textarea w-full md:h-28 input-bordered focus:outline-secondary"
                   placeholder="Your Message"
                 ></textarea>
               </div>
               <div>
-                <button className="btn w-full mt-5 rounded-none btn-secondary text-white">
+                <button
+                  type="submit"
+                  className="btn w-full mt-5 rounded-none btn-secondary text-white"
+                >
                   Submit Request
                 </button>
               </div>
@@ -135,6 +174,7 @@ const HomeContact = () => {
           </form>
         </div>
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };

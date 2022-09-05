@@ -11,7 +11,6 @@ const MyProfile = () => {
 
   const email = user?.email;
   const url = `https://secure-wildwood-53933.herokuapp.com/user/${email}`;
-  console.log(url);
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())

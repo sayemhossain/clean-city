@@ -1,4 +1,5 @@
 import {
+  faAddressBook,
   faAddressCard,
   faArrowRightFromBracket,
   faBoxesPacking,
@@ -16,6 +17,7 @@ import {
   faSackDollar,
   faSliders,
   faUser,
+  faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { signOut } from "firebase/auth";
@@ -23,6 +25,7 @@ import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, NavLink, Outlet, useNavigate } from "react-router-dom";
 import { auth } from "../../firebase.init";
+import CustomLinkTwo from "../../shared/CustomLinkTwo/CustomLinkTwo";
 
 const Dashboard = () => {
   const [user] = useAuthState(auth);
@@ -129,12 +132,30 @@ const Dashboard = () => {
               </Link>
             </li>
             <li>
+              <Link className="" to="/dashboard/managecontact">
+                <FontAwesomeIcon icon={faAddressBook}></FontAwesomeIcon>
+                Manage Contact
+              </Link>
+            </li>
+            <li>
               <p onClick={logout}>
                 <FontAwesomeIcon
                   icon={faArrowRightFromBracket}
                 ></FontAwesomeIcon>{" "}
                 Logout
               </p>
+            </li>
+            <li>
+              <Link className="" to="/dashboard/alluser">
+                <FontAwesomeIcon icon={faUsers}></FontAwesomeIcon>
+                All User
+              </Link>
+            </li>
+            <li>
+              <Link className="" to="/dashboard/alladmin">
+                <FontAwesomeIcon icon={faUsers}></FontAwesomeIcon>
+                All Admin
+              </Link>
             </li>
           </ul>
         </div>

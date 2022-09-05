@@ -52,7 +52,7 @@ const AccountSettings = () => {
         </h3>
         <hr />
         <div className="bg-primary  flex justify-center md:pt-10 ">
-          <div className="shadow-lgrounded-lg bg-gray-100 w-full mx-20 rounded-lg mb-10 pt-5 pb-10">
+          <div className="shadow-lg bg-gray-100 w-full mx-20 rounded-lg mb-10 pt-5 pb-10">
             <form action="" onSubmit={handleUpdate}>
               <div className="md:px-28 ">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
