@@ -1,7 +1,10 @@
 import React from "react";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link, Outlet, useNavigate } from "react-router-dom";
+
 const SubcriptionPackage = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <h3
@@ -73,9 +76,12 @@ const SubcriptionPackage = () => {
                     24/7 support
                   </p>
                   <div className="text-center mt-5">
-                    <button className="btn btn-secondary rounded-none btn-sm">
+                    <Link
+                      to="/dashboard/basic"
+                      className="btn btn-secondary rounded-none btn-sm"
+                    >
                       Subcribe
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -214,6 +220,7 @@ const SubcriptionPackage = () => {
             </div>
           </div>
         </div>
+        <Outlet></Outlet>
       </div>
     </div>
   );

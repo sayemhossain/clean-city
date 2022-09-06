@@ -87,13 +87,7 @@ const Dashboard = () => {
               </Link>
             </li>
             <li>
-              <Link className="" to="/dashboard">
-                <FontAwesomeIcon icon={faHandHoldingHand}></FontAwesomeIcon>
-                Donate Product
-              </Link>
-            </li>
-            <li>
-              <Link className="" to="/dashboard">
+              <Link className="" to="/dashboard/subcriptionpackage">
                 <FontAwesomeIcon icon={faDumpster}></FontAwesomeIcon> House
                 Waste
               </Link>
