@@ -9,6 +9,7 @@ import AllUser from "./pages/Dashboard/AllUser/AllUser";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import ManageContact from "./pages/Dashboard/ManageContact/ManageContact";
 import MyProfile from "./pages/Dashboard/MyProfile/MyProfile";
+import SubcriptionPackage from "./pages/Dashboard/SubcriptionPackage/SubcriptionPackage";
 import Home from "./pages/Home/Home/Home";
 import LetesNewsDetails from "./pages/Home/LatestNews/LetesNewsDetails";
 import OurHistory from "./pages/Home/WhyUs/OurHistory";
@@ -46,6 +47,10 @@ function App() {
         >
           <Route index element={<MyProfile></MyProfile>}></Route>
           <Route path="myprofile" element={<MyProfile></MyProfile>}></Route>
+          <Route
+            path="subcriptionpackage"
+            element={<SubcriptionPackage></SubcriptionPackage>}
+          ></Route>
           <Route
             path="accountsettings"
             element={<AccountSettings></AccountSettings>}

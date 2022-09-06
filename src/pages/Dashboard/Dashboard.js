@@ -11,6 +11,7 @@ import {
   faShieldHalved,
   faSliders,
   faUser,
+  faMoneyBillWave,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -110,13 +111,7 @@ const Dashboard = () => {
               </Link>
             </li>
             <li>
-              <Link className="" to="/dashboard">
-                <FontAwesomeIcon icon={faSliders}></FontAwesomeIcon> Manage
-                Product
-              </Link>
-            </li>
-            <li>
-              <Link className="" to="/dashboard">
+              <Link className="" to="/dashboard/subcriptionpackage">
                 <FontAwesomeIcon icon={faBoxOpen}></FontAwesomeIcon>
                 Subscription Package
               </Link>
@@ -141,6 +136,24 @@ const Dashboard = () => {
                   <Link className="" to="/dashboard/managecontact">
                     <FontAwesomeIcon icon={faAddressBook}></FontAwesomeIcon>
                     Manage Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link className="" to="/dashboard">
+                    <FontAwesomeIcon icon={faSliders}></FontAwesomeIcon> Manage
+                    Selling Product
+                  </Link>
+                </li>
+                <li>
+                  <Link className="" to="/dashboard">
+                    <FontAwesomeIcon icon={faSliders}></FontAwesomeIcon> Manage
+                    Donate Product
+                  </Link>
+                </li>
+                <li>
+                  <Link className="" to="/dashboard">
+                    <FontAwesomeIcon icon={faMoneyBillWave}></FontAwesomeIcon>{" "}
+                    Payment Management
                   </Link>
                 </li>
                 <li>
