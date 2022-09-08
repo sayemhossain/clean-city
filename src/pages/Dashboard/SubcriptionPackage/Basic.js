@@ -23,7 +23,7 @@ const Basic = () => {
                 alt=""
               />
             </div>
-            <div className="bg-gray-50 p-10">
+            <div className="bg-gray-100 p-10">
               <form action="">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-3">
                   <input
