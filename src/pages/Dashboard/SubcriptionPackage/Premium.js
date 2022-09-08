@@ -1,12 +1,13 @@
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../../../firebase.init";
+import standardImg from "../../../img/standardImg.png";
 
-const Basic = () => {
+const Premium = () => {
   const [user] = useAuthState(auth);
   const nameOfMonth = new Date().toLocaleString("default", { month: "long" });
-  const price = 199;
-  const packageName = "Basic";
+  const price = 499;
+  const packageName = "Premium";
 
   const handlePackage = (e) => {
     e.preventDefault();
@@ -24,7 +25,7 @@ const Basic = () => {
     })
       .then((res) => res.json())
       .then((data) =>
-        alert("Subcription pending.... Please make payment first !")
+        alert("Subcription pending... Please make payment first !")
       );
     e.target.reset();
   };
@@ -43,7 +44,7 @@ const Basic = () => {
           <div className="grid md:flex gap-10 grid-cols-1 md:grid-cols-2">
             <div>
               <img
-                src="https://cdn.filestackcontent.com/pbMe99njQ6ea8tAfsg1Z"
+                src="https://www.metrolocalmedia.com/wp-content/uploads/2018/11/metrolocalmedia-premium-logo.png"
                 alt=""
               />
             </div>
@@ -84,6 +85,7 @@ const Basic = () => {
                     />
                     <input
                       type="text"
+                      name="phone"
                       value={price + " Taka"}
                       disabled
                       placeholder="Phone Number"
@@ -106,4 +108,4 @@ const Basic = () => {
   );
 };
 
-export default Basic;
+export default Premium;

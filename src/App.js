@@ -10,6 +10,8 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import ManageContact from "./pages/Dashboard/ManageContact/ManageContact";
 import MyProfile from "./pages/Dashboard/MyProfile/MyProfile";
 import Basic from "./pages/Dashboard/SubcriptionPackage/Basic";
+import Premium from "./pages/Dashboard/SubcriptionPackage/Premium";
+import Standard from "./pages/Dashboard/SubcriptionPackage/Standard";
 import SubcriptionPackage from "./pages/Dashboard/SubcriptionPackage/SubcriptionPackage";
 import Home from "./pages/Home/Home/Home";
 import LetesNewsDetails from "./pages/Home/LatestNews/LetesNewsDetails";
@@ -53,6 +55,8 @@ function App() {
             element={<SubcriptionPackage></SubcriptionPackage>}
           ></Route>
           <Route path="basic" element={<Basic></Basic>}></Route>
+          <Route path="standard" element={<Standard></Standard>}></Route>
+          <Route path="premium" element={<Premium></Premium>}></Route>
           <Route
             path="accountsettings"
             element={<AccountSettings></AccountSettings>}

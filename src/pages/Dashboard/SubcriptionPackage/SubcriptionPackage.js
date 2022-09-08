@@ -144,9 +144,12 @@ const SubcriptionPackage = () => {
                     24/7 support
                   </p>
                   <div className="text-center mt-5">
-                    <button className="btn btn-primary rounded-none btn-sm">
+                    <Link
+                      to="/dashboard/standard"
+                      className="btn btn-primary rounded-none btn-sm"
+                    >
                       Subcribe
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -211,9 +214,12 @@ const SubcriptionPackage = () => {
                     24/7 support
                   </p>
                   <div className="text-center mt-5">
-                    <button className="btn btn-secondary rounded-none btn-sm">
+                    <Link
+                      to="/dashboard/premium"
+                      className="btn btn-secondary rounded-none btn-sm"
+                    >
                       Subcribe
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
