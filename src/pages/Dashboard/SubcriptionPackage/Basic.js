@@ -5,6 +5,26 @@ import { auth } from "../../../firebase.init";
 const Basic = () => {
   const [user] = useAuthState(auth);
   const nameOfMonth = new Date().toLocaleString("default", { month: "long" });
+
+  const handlePackage = (e) => {
+    e.preventDefault();
+    const name = user.displayName;
+    const email = user.email;
+    const phone = e.target.phone.value;
+
+    const packageData = { name, email, nameOfMonth, phone };
+
+    fetch(`http://localhost:5000/package`, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(product),
+    })
+      .then((res) => res.json())
+      .then((data) => alert("Tool successfully added."));
+    e.target.reset();
+  };
   return (
     <div>
       <h3
@@ -25,7 +45,7 @@ const Basic = () => {
               />
             </div>
             <div className="bg-gray-100 p-10">
-              <form action="">
+              <form action="" onSubmit={handlePackage}>
                 <div className="grid grid-cols-1 md:grid-cols-1 gap-x-2 gap-y-3">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                     <input
@@ -66,7 +86,10 @@ const Basic = () => {
                       className="input w-full rounded-none"
                     />
                   </div>
-                  <button className="btn btn-secondary w-full rounded-none">
+                  <button
+                    type="submit"
+                    className="btn btn-secondary w-full rounded-none"
+                  >
                     Subcribe
                   </button>
                 </div>
