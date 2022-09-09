@@ -28,9 +28,9 @@ const PackageManagement = () => {
                   <th>No.</th>
                   <th>Name</th>
                   <th>Email</th>
-                  <th>name Of Month</th>
+                  <th>Name Of Month</th>
                   <th>Package Name</th>
-                  <th>price</th>
+                  <th>Price</th>
                   <th>Payment Status</th>
                 </tr>
               </thead>

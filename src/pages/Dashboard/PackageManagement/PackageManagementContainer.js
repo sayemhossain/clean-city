@@ -11,7 +11,7 @@ const PackageManagementContainer = ({ packageOrder, index }) => {
       <td>{packageName}</td>
       <td>{price}</td>
       <td>
-        <button className="btn btn-xs">Confirm</button>
+        <button className="btn btn-xs btn-success">Confirm</button>
       </td>
     </tr>
   );
