@@ -139,14 +139,14 @@ const Dashboard = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link className="" to="/dashboard">
-                    <FontAwesomeIcon icon={faSliders}></FontAwesomeIcon> Manage
-                    Donate Product
+                  <Link className="" to="/dashboard/managepackage">
+                    <FontAwesomeIcon icon={faSliders}></FontAwesomeIcon>Package
+                    Management
                   </Link>
                 </li>
                 <li>
                   <Link className="" to="/dashboard">
-                    <FontAwesomeIcon icon={faMoneyBillWave}></FontAwesomeIcon>{" "}
+                    <FontAwesomeIcon icon={faMoneyBillWave}></FontAwesomeIcon>
                     Payment Management
                   </Link>
                 </li>

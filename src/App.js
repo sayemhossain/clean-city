@@ -9,6 +9,7 @@ import AllUser from "./pages/Dashboard/AllUser/AllUser";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import ManageContact from "./pages/Dashboard/ManageContact/ManageContact";
 import MyProfile from "./pages/Dashboard/MyProfile/MyProfile";
+import PackageManagement from "./pages/Dashboard/PackageManagement/PackageManagement";
 import Basic from "./pages/Dashboard/SubcriptionPackage/Basic";
 import Premium from "./pages/Dashboard/SubcriptionPackage/Premium";
 import Standard from "./pages/Dashboard/SubcriptionPackage/Standard";
@@ -64,6 +65,10 @@ function App() {
           <Route
             path="managecontact"
             element={<ManageContact></ManageContact>}
+          ></Route>
+          <Route
+            path="managepackage"
+            element={<PackageManagement></PackageManagement>}
           ></Route>
           <Route path="alluser" element={<AllUser></AllUser>}></Route>
           <Route path="alladmin" element={<AllAdmin></AllAdmin>}></Route>
