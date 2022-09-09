@@ -31,7 +31,7 @@ const PackageManagement = () => {
                   <th>Name Of Month</th>
                   <th>Package Name</th>
                   <th>Price</th>
-                  <th>Payment Statu</th>
+                  <th>Payment Status</th>
                 </tr>
               </thead>
               <tbody>
