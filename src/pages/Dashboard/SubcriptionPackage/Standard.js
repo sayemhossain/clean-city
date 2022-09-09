@@ -93,7 +93,7 @@ const Standard = () => {
                     type="submit"
                     className="btn btn-secondary w-full rounded-none"
                   >
-                    Subcribe
+                    Submit
                   </button>
                 </div>
               </form>
