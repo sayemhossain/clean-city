@@ -25,7 +25,7 @@ const PaymentStatusRow = ({ userPackage, index }) => {
       <td>
         <Link to={`/dashboard/payment/${_id}`}>
           <div className="flex justify-center">
-            <button className="btn btn-primary px-8 btn-xs">pay</button>
+            <button className="btn btn-success px-8 btn-xs">pay</button>
           </div>
         </Link>
       </td>

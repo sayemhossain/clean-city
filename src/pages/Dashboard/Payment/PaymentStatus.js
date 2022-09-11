@@ -32,6 +32,7 @@ const PaymentStatus = () => {
               <table class="table table-compact w-full">
                 <thead>
                   <tr>
+                    <th>No.</th>
                     <th>Name</th>
                     <th>Email</th>
                     <th>Name Of Month</th>
