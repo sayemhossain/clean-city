@@ -4,7 +4,7 @@ import PackageManagementContainer from "./PackageManagementContainer";
 const PackageManagement = () => {
   const [packageOrders, setPackageOrders] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/package`)
+    fetch(`https://secure-wildwood-53933.herokuapp.com/package`)
       .then((res) => res.json())
       .then((data) => setPackageOrders(data));
   }, []);
