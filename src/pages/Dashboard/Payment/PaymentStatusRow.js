@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
-const PaymentStatusRow = ({ package, index }) => {
+const PaymentStatusRow = ({ userPackage, index }) => {
   const [deletingOrder, setDeletingOrder] = useState(false);
-  const { _id, name, email, nameOfMonth, packageName, price } = package;
+  const { _id, name, email, nameOfMonth, packageName, price } = userPackage;
 
   const handleDeleteOrder = () => {
     fetch(`https://stark-shelf-45913.herokuapp.com/order/${_id}`, {

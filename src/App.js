@@ -10,6 +10,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import ManageContact from "./pages/Dashboard/ManageContact/ManageContact";
 import MyProfile from "./pages/Dashboard/MyProfile/MyProfile";
 import PackageManagement from "./pages/Dashboard/PackageManagement/PackageManagement";
+import PaymentStatus from "./pages/Dashboard/Payment/PaymentStatus";
 import Basic from "./pages/Dashboard/SubcriptionPackage/Basic";
 import Premium from "./pages/Dashboard/SubcriptionPackage/Premium";
 import Standard from "./pages/Dashboard/SubcriptionPackage/Standard";
@@ -58,6 +59,19 @@ function App() {
           <Route path="basic" element={<Basic></Basic>}></Route>
           <Route path="standard" element={<Standard></Standard>}></Route>
           <Route path="premium" element={<Premium></Premium>}></Route>
+
+          <Route
+            path="paymentstatus"
+            element={<PaymentStatus></PaymentStatus>}
+          ></Route>
+
+          {/* <Route path="payment/:id" element={<Payment></Payment>}>
+            <Route index element={<Bkash></Bkash>}></Route>
+            <Route path="bkash" element={<Bkash></Bkash>}></Route>
+            <Route path="nagad" element={<Nagad></Nagad>}></Route>
+            <Route path="rocket" element={<Rocket></Rocket>}></Route>
+          </Route> */}
+
           <Route
             path="accountsettings"
             element={<AccountSettings></AccountSettings>}

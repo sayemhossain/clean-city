@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "../../../firebase.init";
 import PaymentStatusRow from "./PaymentStatusRow";
 
 const PaymentStatus = () => {
-  const [packages, setPackages] = useState([]);
+  const [userPackages, setUserPackages] = useState([]);
   const [user] = useAuthState(auth);
 
   useEffect(() => {
@@ -10,8 +12,8 @@ const PaymentStatus = () => {
       method: "GET",
     })
       .then((res) => res.json())
-      .then((data) => setPackages(data));
-  }, [packages]);
+      .then((data) => setUserPackages(data));
+  }, [userPackages]);
   return (
     <div>
       <h3
@@ -38,10 +40,10 @@ const PaymentStatus = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {packages?.map((package, index) => (
+                  {userPackages?.map((userPackage, index) => (
                     <PaymentStatusRow
-                      key={package._id}
-                      package={package}
+                      key={userPackage._id}
+                      userPackage={userPackage}
                       index={index}
                     ></PaymentStatusRow>
                   ))}

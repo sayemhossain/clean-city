@@ -99,7 +99,7 @@ const Dashboard = () => {
               </Link>
             </li>
             <li>
-              <Link className="" to="/dashboard">
+              <Link className="" to="/dashboard/paymentstatus">
                 <FontAwesomeIcon icon={faFileInvoiceDollar}></FontAwesomeIcon>
                 Payment Status
               </Link>
