@@ -10,7 +10,7 @@ const Nagad = () => {
 
   const [order, setOrder] = useState({});
   useEffect(() => {
-    fetch(`https://stark-shelf-45913.herokuapp.com/order/${id}`)
+    fetch(`http://localhost:5000/userpackage/${id}`)
       .then((res) => res.json())
       .then((data) => setOrder(data));
   }, []);
@@ -19,29 +19,26 @@ const Nagad = () => {
     e.preventDefault();
     const bkashNumber = e.target.number.value;
     const transId = e.target.transId.value;
-    console.log(bkashNumber);
 
-    const productName = order.productName;
+    const nameOfMonth = order.nameOfMonth;
+    const packageName = order.packageName;
+    const price = order.price;
+    const email = user.email;
+    const name = user.displayName;
 
-    const customerNamer = order.customerNamer;
-    const userEmail = order.user;
-    const orderQuantity = order.orderQuantity;
-    const totalCost = order.totalCost;
-    const address = order.address;
     const method = "Nagad";
 
     const paymentData = {
-      productName,
+      nameOfMonth,
       bkashNumber,
       transId,
-      customerNamer,
-      userEmail,
-      orderQuantity,
-      totalCost,
-      address,
+      packageName,
+      price,
+      email,
+      name,
       method,
     };
-    fetch(`https://stark-shelf-45913.herokuapp.com/payment`, {
+    fetch(`http://localhost:5000/payment`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
