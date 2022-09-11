@@ -10,17 +10,13 @@ const Payment = () => {
 
   return (
     <div className=" md:px-20 pb-20 bg-base-100">
-      <div className="text-center py-5">
-        <h1
-          className="text-xl font-bold uppercase text-blue-300"
-          style={{ fontFamily: "Macondo" }}
-        >
-          Payment leaderboard
-        </h1>
-      </div>
-      <div className="card bg-gray-500 text-gray-200 mb-3 rounded-none ">
-        <div class=" p-2 flex items-center"></div>
-      </div>
+      <h3
+        className="text-xl md:px-20 mt-5 text-center bg-base-100 "
+        style={{ fontFamily: "Teko" }}
+      >
+        Payment
+      </h3>
+      <hr />
       <div className="mt-5">
         <nav className="text-center mb-10 flex justify-center">
           <CustomLink

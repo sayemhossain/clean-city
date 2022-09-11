@@ -63,7 +63,7 @@ const Bkash = () => {
               Payment your money using bkash
             </p>
             <p className="text-sm text-gray-600 mt-1">
-              bKash Number: 01625-511680
+              bKash Number: 01788-156221
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-2">

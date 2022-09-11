@@ -63,7 +63,7 @@ const Rocket = () => {
               Payment your money using Rocket
             </p>
             <p className="text-sm text-gray-600 mt-1">
-              Rocket Number: 01625-511680
+              Rocket Number: 01788-156221
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-2">
