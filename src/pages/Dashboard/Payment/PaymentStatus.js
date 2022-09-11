@@ -6,14 +6,15 @@ import PaymentStatusRow from "./PaymentStatusRow";
 const PaymentStatus = () => {
   const [userPackages, setUserPackages] = useState([]);
   const [user] = useAuthState(auth);
-
+  const email = user.email;
   useEffect(() => {
-    fetch(`http://localhost:5000/package/${user.email}`, {
+    fetch(`http://localhost:5000/userpackage/${email}`, {
       method: "GET",
     })
       .then((res) => res.json())
       .then((data) => setUserPackages(data));
-  }, [userPackages]);
+  }, []);
+  console.log(userPackages);
   return (
     <div>
       <h3
