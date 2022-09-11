@@ -29,9 +29,12 @@ const PaymentStatus = () => {
               <table class="table table-compact w-full">
                 <thead>
                   <tr>
-                    <th>No.</th>
+                    <th>Name</th>
                     <th>Email</th>
-                    <th>Make Admin</th>
+                    <th>Name Of Month</th>
+                    <th>Package Name</th>
+                    <th>Price</th>
+                    <th>Payment</th>
                   </tr>
                 </thead>
                 <tbody>

@@ -1,20 +1,9 @@
-import { faCircleCheck, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
 const PaymentStatusRow = ({ package, index }) => {
-  // const { id } = useParams();
-
-  // const [payment, setPayment] = useState({});
-  // useEffect(() => {
-  //   fetch(`https://stark-shelf-45913.herokuapp.com/payment/${id}`)
-  //     .then((res) => res.json())
-  //     .then((data) => setPayment(data));
-  // }, []);
-
   const [deletingOrder, setDeletingOrder] = useState(false);
-  const {} = package;
+  const { _id, name, email, nameOfMonth, packageName, price } = package;
 
   const handleDeleteOrder = () => {
     fetch(`https://stark-shelf-45913.herokuapp.com/order/${_id}`, {
@@ -29,53 +18,17 @@ const PaymentStatusRow = ({ package, index }) => {
     <>
       <tr>
         <th>{index + 1}</th>
+        <td>{name}</td>
+        <td>{email}</td>
+        <td>{nameOfMonth}</td>
+        <td>{packageName} tk</td>
+        <td>{price} tk</td>
         <td>
-          <div class="flex items-center gap-3 space-x-1">
-            <div class="avatar">
-              <div class="w-14 h-14">
-                <img src={img} alt="Avatar" />
-              </div>
+          <Link to={`/dashboard/payment/${_id}`}>
+            <div className="flex justify-center">
+              <button className="btn btn-primary px-8 btn-xs">pay</button>
             </div>
-            <div>
-              <div class="font-bold text-sm">
-                <small>{productName}</small>
-              </div>
-              <div class="text-sm opacity-50">Price: {price} tk</div>
-            </div>
-          </div>
-        </td>
-        <td>
-          {customerNamer}
-          <br />
-          <span class="badge badge-ghost badge-sm">Address : {address}</span>
-          <br></br>
-          <span class="badge badge-ghost badge-sm">phone : {phone}</span>
-        </td>
-        <td>Quantity : {orderQuantity}</td>
-        <td>{totalCost} tk</td>
-        <td>
-          {price && !paid && (
-            <button
-              onClick={handleDeleteOrder}
-              className="btn btn-xs btn-error px-5"
-            >
-              Cancel
-            </button>
-          )}
-          {price && paid && (
-            <button className="btn btn-outline btn-xs btn-error px-5" disabled>
-              Cancel
-            </button>
-          )}
-        </td>
-        <td>
-          {price && !paid && (
-            <Link to={`/dashboard/paymentwraper/${_id}`}>
-              <div className="flex justify-center">
-                <button className="btn btn-primary px-8 btn-xs">pay</button>
-              </div>
-            </Link>
-          )}
+          </Link>
         </td>
       </tr>
       <ToastContainer></ToastContainer>
