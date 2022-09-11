@@ -27,7 +27,7 @@ const HomeContact = () => {
       location,
       des,
     };
-    fetch(`https://secure-wildwood-53933.herokuapp.com/contact`, {
+    fetch(`http://localhost:5000/contact`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
