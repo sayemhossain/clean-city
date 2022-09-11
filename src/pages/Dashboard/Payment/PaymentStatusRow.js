@@ -15,24 +15,21 @@ const PaymentStatusRow = ({ package, index }) => {
       });
   };
   return (
-    <>
-      <tr>
-        <th>{index + 1}</th>
-        <td>{name}</td>
-        <td>{email}</td>
-        <td>{nameOfMonth}</td>
-        <td>{packageName} tk</td>
-        <td>{price} tk</td>
-        <td>
-          <Link to={`/dashboard/payment/${_id}`}>
-            <div className="flex justify-center">
-              <button className="btn btn-primary px-8 btn-xs">pay</button>
-            </div>
-          </Link>
-        </td>
-      </tr>
-      <ToastContainer></ToastContainer>
-    </>
+    <tr>
+      <td>{index + 1}</td>
+      <td>{name}</td>
+      <td>{email}</td>
+      <td>{nameOfMonth}</td>
+      <td>{packageName} tk</td>
+      <td>{price} tk</td>
+      <td>
+        <Link to={`/dashboard/payment/${_id}`}>
+          <div className="flex justify-center">
+            <button className="btn btn-primary px-8 btn-xs">pay</button>
+          </div>
+        </Link>
+      </td>
+    </tr>
   );
 };
 
