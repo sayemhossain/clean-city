@@ -10,7 +10,11 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import ManageContact from "./pages/Dashboard/ManageContact/ManageContact";
 import MyProfile from "./pages/Dashboard/MyProfile/MyProfile";
 import PackageManagement from "./pages/Dashboard/PackageManagement/PackageManagement";
+import Bkash from "./pages/Dashboard/Payment/Bkash";
+import Nagad from "./pages/Dashboard/Payment/Nagad";
+import Payment from "./pages/Dashboard/Payment/Payment";
 import PaymentStatus from "./pages/Dashboard/Payment/PaymentStatus";
+import Rocket from "./pages/Dashboard/Payment/Rocket";
 import Basic from "./pages/Dashboard/SubcriptionPackage/Basic";
 import Premium from "./pages/Dashboard/SubcriptionPackage/Premium";
 import Standard from "./pages/Dashboard/SubcriptionPackage/Standard";
@@ -65,12 +69,12 @@ function App() {
             element={<PaymentStatus></PaymentStatus>}
           ></Route>
 
-          {/* <Route path="payment/:id" element={<Payment></Payment>}>
+          <Route path="payment/:id" element={<Payment></Payment>}>
             <Route index element={<Bkash></Bkash>}></Route>
             <Route path="bkash" element={<Bkash></Bkash>}></Route>
             <Route path="nagad" element={<Nagad></Nagad>}></Route>
             <Route path="rocket" element={<Rocket></Rocket>}></Route>
-          </Route> */}
+          </Route>
 
           <Route
             path="accountsettings"
