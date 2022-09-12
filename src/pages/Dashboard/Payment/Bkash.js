@@ -10,7 +10,7 @@ const Bkash = () => {
 
   const [order, setOrder] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:5000/userpackage/${id}`)
+    fetch(`https://secure-wildwood-53933.herokuapp.com/userpackage/${id}`)
       .then((res) => res.json())
       .then((data) => setOrder(data));
   }, []);
@@ -39,7 +39,7 @@ const Bkash = () => {
       name,
       method,
     };
-    fetch(`http://localhost:5000/payment`, {
+    fetch(`https://secure-wildwood-53933.herokuapp.com/payment`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

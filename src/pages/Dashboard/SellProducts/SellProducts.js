@@ -23,18 +23,18 @@ const SellProducts = () => {
             </div>
             <div className="bg-gray-100 p-5">
               <form action="">
-                <div className="form-control w-full">
-                  <label className="label">
-                    <span className="label-text">Product Name</span>
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    placeholder="Enter product name"
-                    className="input input-bordered w-full"
-                  />
-                </div>
                 <div className="flex gap-3">
+                  <div className="form-control w-full">
+                    <label className="label">
+                      <span className="label-text">Product Name</span>
+                    </label>
+                    <input
+                      type="text"
+                      required
+                      placeholder="Enter product name"
+                      className="input input-bordered w-full"
+                    />
+                  </div>
                   <div className="form-control w-full">
                     <label className="label">
                       <span className="label-text">Price</span>
@@ -55,8 +55,12 @@ const SellProducts = () => {
                     <option disabled selected>
                       Select Cetagory
                     </option>
-                    <option>Han Solo</option>
-                    <option>Greedo</option>
+                    <option>Stationery</option>
+                    <option>Electronics</option>
+                    <option>Plastics</option>
+                    <option>Metal</option>
+                    <option>Used Books</option>
+                    <option>Papers</option>
                   </select>
                 </div>
               </form>
