@@ -14,6 +14,7 @@ const PaymentManagement = () => {
       .then((res) => res.json())
       .then((data) => setPayments(data));
   }, []);
+  console.log(payments);
   return (
     <div>
       <div className="text-center py-5">
@@ -30,11 +31,10 @@ const PaymentManagement = () => {
             <thead>
               <tr>
                 <th>No.</th>
-                <th>Product Name</th>
                 <th>Email</th>
-                <th>bKash Number</th>
+                <th>Payment Number</th>
+                <th>Payment Method</th>
                 <th>trans Id</th>
-                <th>Price</th>
                 <th>Status</th>
               </tr>
             </thead>

@@ -17,7 +17,7 @@ const Bkash = () => {
 
   const handlePayment = (e) => {
     e.preventDefault();
-    const bkashNumber = e.target.number.value;
+    const paymentNumber = e.target.number.value;
     const transId = e.target.transId.value;
 
     const nameOfMonth = order.nameOfMonth;
@@ -25,12 +25,13 @@ const Bkash = () => {
     const price = order.price;
     const email = user.email;
     const name = user.displayName;
-
     const method = "Bkash";
+
+    console.log("order", order);
 
     const paymentData = {
       nameOfMonth,
-      bkashNumber,
+      paymentNumber,
       transId,
       packageName,
       price,
@@ -115,6 +116,7 @@ const Bkash = () => {
                         <input
                           type="text"
                           name="number"
+                          required
                           placeholder="Your bKash Number"
                           class="input input-bordered w-full input-sm max-w-xs"
                         />
@@ -126,6 +128,7 @@ const Bkash = () => {
                         <input
                           type="text"
                           name="transId"
+                          required
                           placeholder="Trans Id"
                           class="input input-bordered w-full input-sm max-w-xs"
                         />
