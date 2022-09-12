@@ -127,6 +127,12 @@ const Dashboard = () => {
             {admin && (
               <div>
                 <li>
+                  <Link className="" to="/dashboard/allproduct">
+                    <FontAwesomeIcon icon={faAddressBook}></FontAwesomeIcon>
+                    All Product
+                  </Link>
+                </li>
+                <li>
                   <Link className="" to="/dashboard/managecontact">
                     <FontAwesomeIcon icon={faAddressBook}></FontAwesomeIcon>
                     Manage Contact

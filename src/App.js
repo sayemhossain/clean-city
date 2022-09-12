@@ -5,6 +5,7 @@ import Blogs from "./pages/Blogs/Blogs";
 import Contact from "./pages/Contact/Contact";
 import AccountSettings from "./pages/Dashboard/AccountSettings/AccountSettings";
 import AllAdmin from "./pages/Dashboard/AllAdmin/AllAdmin";
+import AllProduct from "./pages/Dashboard/AllProduct/AllProduct";
 import AllUser from "./pages/Dashboard/AllUser/AllUser";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import ManageContact from "./pages/Dashboard/ManageContact/ManageContact";
@@ -81,6 +82,8 @@ function App() {
             <Route path="nagad" element={<Nagad></Nagad>}></Route>
             <Route path="rocket" element={<Rocket></Rocket>}></Route>
           </Route>
+
+          <Route path="allproduct" element={<AllProduct></AllProduct>}></Route>
 
           <Route
             path="accountsettings"

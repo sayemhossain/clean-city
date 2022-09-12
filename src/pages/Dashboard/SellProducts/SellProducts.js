@@ -1,6 +1,44 @@
 import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "../../../firebase.init";
 
 const SellProducts = () => {
+  const [user] = useAuthState(auth);
+  const email = user.email;
+
+  const handleSell = (e) => {
+    e.preventDefault();
+
+    const pname = e.target.pname.value;
+    const phone = e.target.phone.value;
+    const price = e.target.price.value;
+    const address = e.target.address.value;
+    const description = e.target.description.value;
+    const category = e.target.category.value;
+
+    const productData = {
+      pname,
+      email,
+      phone,
+      price,
+      address,
+      category,
+      description,
+    };
+    fetch(`http://localhost:5000/products`, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(productData),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        alert("Post Success..!");
+      });
+
+    e.target.reset();
+  };
   return (
     <div>
       <h3
@@ -13,58 +51,121 @@ const SellProducts = () => {
       <div class="drawer drawer-mobile pb-10  bg-primary">
         <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content flex flex-col items-center mt-5">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:px-20 md:mt-7">
-            <div className=" bg-gray-100 rounded-lg p-2">
-              <img
-                className="rounded-lg"
-                src="https://cdn.cheapism.com/images/Vintage_Items_to_Sell.max-784x410.jpg"
-                alt=""
-              />
-            </div>
-            <div className="bg-gray-100 p-5">
-              <form action="">
-                <div className="flex gap-3">
-                  <div className="form-control w-full">
-                    <label className="label">
-                      <span className="label-text">Product Name</span>
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      placeholder="Enter product name"
-                      className="input input-bordered w-full"
-                    />
-                  </div>
-                  <div className="form-control w-full">
-                    <label className="label">
-                      <span className="label-text">Price</span>
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      placeholder="Enter price"
-                      className="input input-bordered w-full"
-                    />
-                  </div>
-                </div>
-                <div className="">
+          <div className="bg-gray-100 p-5 rounded-lg w-full md:w-[700px]">
+            <form action="" onSubmit={handleSell}>
+              <div className="flex gap-3">
+                <div className="form-control w-full">
                   <label className="label">
-                    <span className="label-text">Choose Product Cetagory</span>
+                    <span className="label-text">Product Name</span>
                   </label>
-                  <select className="select select-bordered w-full">
-                    <option disabled selected>
-                      Select Cetagory
-                    </option>
-                    <option>Stationery</option>
-                    <option>Electronics</option>
-                    <option>Plastics</option>
-                    <option>Metal</option>
-                    <option>Used Books</option>
-                    <option>Papers</option>
-                  </select>
+                  <input
+                    type="text"
+                    required
+                    name="pname"
+                    placeholder="Enter product name"
+                    className="input input-bordered w-full"
+                  />
                 </div>
-              </form>
-            </div>
+                <div className="form-control w-full">
+                  <label className="label">
+                    <span className="label-text">Email</span>
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    disabled
+                    value={email}
+                    className="input input-bordered w-full"
+                  />
+                </div>
+              </div>
+              <div className="">
+                <label className="label">
+                  <span className="label-text">Choose Product Category</span>
+                </label>
+                <select
+                  name="category"
+                  className="select select-bordered w-full"
+                >
+                  <option disabled selected>
+                    Select category
+                  </option>
+                  <option>Stationery</option>
+                  <option>Electronics</option>
+                  <option>Plastics</option>
+                  <option>Metal</option>
+                  <option>Used Books</option>
+                  <option>Papers</option>
+                </select>
+              </div>
+              <div className="flex gap-3">
+                <div className="form-control w-full">
+                  <label className="label">
+                    <span className="label-text">Phone Number</span>
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    name="phone"
+                    placeholder="Enter your number"
+                    className="input input-bordered w-full"
+                  />
+                </div>
+                <div className="form-control w-full">
+                  <label className="label">
+                    <span className="label-text">Product Price</span>
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    name="price"
+                    placeholder="Enter product price"
+                    className="input input-bordered w-full"
+                  />
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <div className="form-control w-full">
+                  <label className="label">
+                    <span className="label-text">Product Image</span>
+                  </label>
+                  <input
+                    type="file"
+                    name="name"
+                    placeholder="Enter product name"
+                    className="input input-bordered w-full pt-1.5"
+                  />
+                </div>
+                <div className="form-control w-full">
+                  <label className="label">
+                    <span className="label-text">Address</span>
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    name="address"
+                    placeholder="Enter your full address"
+                    className="input input-bordered w-full"
+                  />
+                </div>
+              </div>
+              <div className="">
+                <label className="label">
+                  <span className="label-text">Description</span>
+                </label>
+                <textarea
+                  name="description"
+                  required
+                  className="textarea w-full h-32"
+                  placeholder="Enter product description"
+                ></textarea>
+              </div>
+              <div className="mt-5">
+                <button type="submit" className="btn btn-secondary w-full">
+                  Post
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
