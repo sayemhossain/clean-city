@@ -19,7 +19,7 @@ const SubcriptionPackage = () => {
         <div class="drawer-content flex flex-col items-center mt-5">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 md:my-16 my-10">
             <div>
-              <div className="bg-gray-100 px-5 md:w-64 py-5 shadow-lg">
+              <div className="bg-gray-100 px-5 md:w-64 h-[400px] py-5 shadow-lg">
                 <div className="text-center">
                   <h4 className="text-2xl text-secondary font-bold">Basic</h4>
                   <h1 className="text-xs">
@@ -33,7 +33,7 @@ const SubcriptionPackage = () => {
                       className="text-green-400"
                       icon={faCircleCheck}
                     ></FontAwesomeIcon>{" "}
-                    waste collection
+                    Usual household waste
                   </p>
                   <p>
                     {" "}
@@ -41,7 +41,7 @@ const SubcriptionPackage = () => {
                       className="text-green-400"
                       icon={faCircleCheck}
                     ></FontAwesomeIcon>{" "}
-                    pickup from home
+                    Kitchen waste (Stale food, Rotten Vegetable)
                   </p>
                   <p>
                     {" "}
@@ -49,7 +49,7 @@ const SubcriptionPackage = () => {
                       className="text-green-400"
                       icon={faCircleCheck}
                     ></FontAwesomeIcon>{" "}
-                    pickup from home
+                    Non usable cloths, window curtain.
                   </p>
                   <p>
                     {" "}
@@ -57,7 +57,7 @@ const SubcriptionPackage = () => {
                       className="text-green-400"
                       icon={faCircleCheck}
                     ></FontAwesomeIcon>{" "}
-                    pickup from home
+                    Household medical waste
                   </p>
                   <p>
                     {" "}
@@ -65,15 +65,7 @@ const SubcriptionPackage = () => {
                       className="text-green-400"
                       icon={faCircleCheck}
                     ></FontAwesomeIcon>{" "}
-                    pickup from home
-                  </p>
-                  <p>
-                    {" "}
-                    <FontAwesomeIcon
-                      className="text-green-400"
-                      icon={faCircleCheck}
-                    ></FontAwesomeIcon>{" "}
-                    24/7 support
+                    Pick-up from home.
                   </p>
                   <div className="text-center mt-5">
                     <Link
@@ -87,7 +79,7 @@ const SubcriptionPackage = () => {
               </div>
             </div>
             <div>
-              <div className="bg-secondary text-primary px-5 py-5 md:w-64 shadow-lg">
+              <div className="bg-secondary text-primary px-5 py-5 md:w-64 shadow-lg h-[400px]">
                 <div className="text-center">
                   <h4 className="text-2xl text-primary font-bold">Standard</h4>
                   <h1 className="text-xs">
@@ -101,7 +93,7 @@ const SubcriptionPackage = () => {
                       className="text-green-400"
                       icon={faCircleCheck}
                     ></FontAwesomeIcon>{" "}
-                    waste collection
+                    Usual household waste
                   </p>
                   <p>
                     {" "}
@@ -109,7 +101,7 @@ const SubcriptionPackage = () => {
                       className="text-green-400"
                       icon={faCircleCheck}
                     ></FontAwesomeIcon>{" "}
-                    pickup from home
+                    Non usable cloths, window curtain.
                   </p>
                   <p>
                     {" "}
@@ -117,7 +109,7 @@ const SubcriptionPackage = () => {
                       className="text-green-400"
                       icon={faCircleCheck}
                     ></FontAwesomeIcon>{" "}
-                    pickup from home
+                    Household medical waste
                   </p>
                   <p>
                     {" "}
@@ -125,7 +117,7 @@ const SubcriptionPackage = () => {
                       className="text-green-400"
                       icon={faCircleCheck}
                     ></FontAwesomeIcon>{" "}
-                    pickup from home
+                    Pick-up from home.
                   </p>
                   <p>
                     {" "}
@@ -133,15 +125,7 @@ const SubcriptionPackage = () => {
                       className="text-green-400"
                       icon={faCircleCheck}
                     ></FontAwesomeIcon>{" "}
-                    pickup from home
-                  </p>
-                  <p>
-                    {" "}
-                    <FontAwesomeIcon
-                      className="text-green-400"
-                      icon={faCircleCheck}
-                    ></FontAwesomeIcon>{" "}
-                    24/7 support
+                    Collect from door to door.
                   </p>
                   <div className="text-center mt-5">
                     <Link
@@ -155,7 +139,7 @@ const SubcriptionPackage = () => {
               </div>
             </div>
             <div>
-              <div className="bg-gray-100 px-5 py-5 md:w-64 shadow-lg">
+              <div className="bg-gray-100 px-5 py-5 md:w-64 h-[400px] shadow-lg">
                 <div className="text-center">
                   <h4 className="text-2xl text-secondary font-bold">
                     Premimum
@@ -171,7 +155,7 @@ const SubcriptionPackage = () => {
                       className="text-green-400"
                       icon={faCircleCheck}
                     ></FontAwesomeIcon>{" "}
-                    waste collection
+                    All types of household waste
                   </p>
                   <p>
                     {" "}
@@ -179,7 +163,8 @@ const SubcriptionPackage = () => {
                       className="text-green-400"
                       icon={faCircleCheck}
                     ></FontAwesomeIcon>{" "}
-                    pickup from home
+                    Available sell item (Stationery, Electronics item, Plastic
+                    waste, Metal waste)
                   </p>
                   <p>
                     {" "}
@@ -187,7 +172,7 @@ const SubcriptionPackage = () => {
                       className="text-green-400"
                       icon={faCircleCheck}
                     ></FontAwesomeIcon>{" "}
-                    pickup from home
+                    Donate item (Broken chair, table and sofa)
                   </p>
                   <p>
                     {" "}
@@ -195,15 +180,7 @@ const SubcriptionPackage = () => {
                       className="text-green-400"
                       icon={faCircleCheck}
                     ></FontAwesomeIcon>{" "}
-                    pickup from home
-                  </p>
-                  <p>
-                    {" "}
-                    <FontAwesomeIcon
-                      className="text-green-400"
-                      icon={faCircleCheck}
-                    ></FontAwesomeIcon>{" "}
-                    pickup from home
+                    Collect from door to door
                   </p>
                   <p>
                     {" "}
