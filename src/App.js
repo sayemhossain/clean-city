@@ -16,6 +16,7 @@ import Payment from "./pages/Dashboard/Payment/Payment";
 import PaymentStatus from "./pages/Dashboard/Payment/PaymentStatus";
 import Rocket from "./pages/Dashboard/Payment/Rocket";
 import PaymentManagement from "./pages/Dashboard/PaymentManagement/PaymentManagement";
+import SellProducts from "./pages/Dashboard/SellProducts/SellProducts";
 import Basic from "./pages/Dashboard/SubcriptionPackage/Basic";
 import Premium from "./pages/Dashboard/SubcriptionPackage/Premium";
 import Standard from "./pages/Dashboard/SubcriptionPackage/Standard";
@@ -57,6 +58,10 @@ function App() {
         >
           <Route index element={<MyProfile></MyProfile>}></Route>
           <Route path="myprofile" element={<MyProfile></MyProfile>}></Route>
+          <Route
+            path="sellproduct"
+            element={<SellProducts></SellProducts>}
+          ></Route>
           <Route
             path="subcriptionpackage"
             element={<SubcriptionPackage></SubcriptionPackage>}

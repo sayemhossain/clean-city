@@ -81,7 +81,7 @@ const Dashboard = () => {
               </Link>
             </li>
             <li>
-              <Link className="" to="/dashboard/myorders">
+              <Link className="" to="/dashboard/sellproduct">
                 <FontAwesomeIcon icon={faSackDollar}></FontAwesomeIcon> Sell
                 product
               </Link>
