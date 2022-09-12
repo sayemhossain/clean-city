@@ -23,16 +23,41 @@ const SellProducts = () => {
             </div>
             <div className="bg-gray-100 p-5">
               <form action="">
-                <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full">
                   <label className="label">
-                    <span className="label-text">Name Of Your Product</span>
+                    <span className="label-text">Product Name</span>
                   </label>
                   <input
                     type="text"
                     required
-                    placeholder="product name"
-                    className="input input-bordered w-full max-w-xs"
+                    placeholder="Enter product name"
+                    className="input input-bordered w-full"
                   />
+                </div>
+                <div className="flex gap-3">
+                  <div className="form-control w-full">
+                    <label className="label">
+                      <span className="label-text">Price</span>
+                    </label>
+                    <input
+                      type="text"
+                      required
+                      placeholder="Enter price"
+                      className="input input-bordered w-full"
+                    />
+                  </div>
+                </div>
+                <div className="">
+                  <label className="label">
+                    <span className="label-text">Choose Product Cetagory</span>
+                  </label>
+                  <select className="select select-bordered w-full">
+                    <option disabled selected>
+                      Select Cetagory
+                    </option>
+                    <option>Han Solo</option>
+                    <option>Greedo</option>
+                  </select>
                 </div>
               </form>
             </div>
