@@ -15,6 +15,7 @@ import Nagad from "./pages/Dashboard/Payment/Nagad";
 import Payment from "./pages/Dashboard/Payment/Payment";
 import PaymentStatus from "./pages/Dashboard/Payment/PaymentStatus";
 import Rocket from "./pages/Dashboard/Payment/Rocket";
+import PaymentManagement from "./pages/Dashboard/PaymentManagement/PaymentManagement";
 import Basic from "./pages/Dashboard/SubcriptionPackage/Basic";
 import Premium from "./pages/Dashboard/SubcriptionPackage/Premium";
 import Standard from "./pages/Dashboard/SubcriptionPackage/Standard";
@@ -83,6 +84,10 @@ function App() {
           <Route
             path="managecontact"
             element={<ManageContact></ManageContact>}
+          ></Route>
+          <Route
+            path="paymentmanagement"
+            element={<PaymentManagement></PaymentManagement>}
           ></Route>
           <Route
             path="managepackage"

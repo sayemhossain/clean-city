@@ -4,7 +4,7 @@ import ManageContactContainer from "./ManageContactContainer";
 const ManageContact = () => {
   const [contacts, setContacts] = useState([]);
   useEffect(() => {
-    fetch(`https://secure-wildwood-53933.herokuapp.com/contact`)
+    fetch(`http://localhost:5000/contact`)
       .then((res) => res.json())
       .then((data) => setContacts(data));
   }, []);

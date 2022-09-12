@@ -8,7 +8,7 @@ import React from "react";
 const AllAdminRow = ({ admin, index }) => {
   const { email } = admin;
   const handleRemoveAdmin = () => {
-    fetch(`https://secure-wildwood-53933.herokuapp.com/user/${email}`, {
+    fetch(`http://localhost:5000/user/${email}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

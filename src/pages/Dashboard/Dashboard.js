@@ -138,6 +138,7 @@ const Dashboard = () => {
                     Selling Product
                   </Link>
                 </li>
+
                 <li>
                   <Link className="" to="/dashboard/managepackage">
                     <FontAwesomeIcon icon={faSliders}></FontAwesomeIcon>Package
@@ -145,7 +146,7 @@ const Dashboard = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link className="" to="/dashboard">
+                  <Link className="" to="/dashboard/paymentmanagement">
                     <FontAwesomeIcon icon={faMoneyBillWave}></FontAwesomeIcon>
                     Payment Management
                   </Link>
