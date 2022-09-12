@@ -25,7 +25,7 @@ const SellProducts = () => {
       category,
       description,
     };
-    fetch(`http://localhost:5000/products`, {
+    fetch(`https://secure-wildwood-53933.herokuapp.com/products`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
