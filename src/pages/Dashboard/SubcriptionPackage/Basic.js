@@ -5,7 +5,7 @@ import { auth } from "../../../firebase.init";
 const Basic = () => {
   const [user] = useAuthState(auth);
   const nameOfMonth = new Date().toLocaleString("default", { month: "long" });
-  const price = 199;
+  const price = 149;
   const packageName = "Basic";
 
   const handlePackage = (e) => {

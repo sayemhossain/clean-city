@@ -10,7 +10,7 @@ const AllProduct = () => {
         className="text-xl md:px-20 mt-5 text-center "
         style={{ fontFamily: "Teko" }}
       >
-        All User
+        All Product
       </h3>
       <hr />
       <div class="drawer drawer-mobile pb-10  bg-primary">

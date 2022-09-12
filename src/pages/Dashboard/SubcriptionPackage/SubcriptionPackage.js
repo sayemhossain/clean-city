@@ -23,7 +23,7 @@ const SubcriptionPackage = () => {
                 <div className="text-center">
                   <h4 className="text-2xl text-secondary font-bold">Basic</h4>
                   <h1 className="text-xs">
-                    $<span className="text-xl">119</span>/month
+                    <span className="text-xl">149</span>tk/month
                   </h1>
                 </div>
                 <hr className="my-5" />
@@ -83,7 +83,7 @@ const SubcriptionPackage = () => {
                 <div className="text-center">
                   <h4 className="text-2xl text-primary font-bold">Standard</h4>
                   <h1 className="text-xs">
-                    $<span className="text-xl">249</span>/month
+                    <span className="text-xl">249</span>tk/month
                   </h1>
                 </div>
                 <hr className="my-5" />
@@ -141,11 +141,9 @@ const SubcriptionPackage = () => {
             <div>
               <div className="bg-gray-100 px-5 py-5 md:w-64 h-[400px] shadow-lg">
                 <div className="text-center">
-                  <h4 className="text-2xl text-secondary font-bold">
-                    Premimum
-                  </h4>
+                  <h4 className="text-2xl text-secondary font-bold">Premium</h4>
                   <h1 className="text-xs">
-                    $<span className="text-xl">499</span>/month
+                    <span className="text-xl">499</span>tk/month
                   </h1>
                 </div>
                 <hr className="my-5" />

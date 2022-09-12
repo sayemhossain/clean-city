@@ -1,7 +1,7 @@
 import React from "react";
 import banner from "../../../img/banner.jpg";
 import Slider from "react-slick";
-import banner2 from "../../../img/banner2.webp";
+import banner5 from "../../../img/banner5.jpeg";
 import banner3 from "../../../img/banner3.jpg";
 import { Link } from "react-router-dom";
 
@@ -16,7 +16,7 @@ const HomeBanner = () => {
     waitForAnimate: false,
     autoplay: true,
     speed: 1500,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     cssEase: "linear",
   };
   return (
@@ -75,7 +75,7 @@ const HomeBanner = () => {
               <div className="mt-5 md:mt-0">
                 <img
                   className="w-[650px] h-[350px] rounded-xl shadow-lg"
-                  src={banner2}
+                  src={banner5}
                   alt=""
                 />
               </div>

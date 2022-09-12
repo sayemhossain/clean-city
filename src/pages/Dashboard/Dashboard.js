@@ -13,6 +13,7 @@ import {
   faUser,
   faMoneyBillWave,
   faUsers,
+  faLayerGroup,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { signOut } from "firebase/auth";
@@ -128,7 +129,7 @@ const Dashboard = () => {
               <div>
                 <li>
                   <Link className="" to="/dashboard/allproduct">
-                    <FontAwesomeIcon icon={faAddressBook}></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={faLayerGroup}></FontAwesomeIcon>
                     All Product
                   </Link>
                 </li>
