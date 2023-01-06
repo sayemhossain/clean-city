@@ -8,7 +8,7 @@ const PaymentStatus = () => {
   const [user] = useAuthState(auth);
   const email = user.email;
   useEffect(() => {
-    fetch(`https://secure-wildwood-53933.herokuapp.com/userpackage/${email}`, {
+    fetch(`http://localhost:5000/userpackage/${email}`, {
       method: "GET",
     })
       .then((res) => res.json())

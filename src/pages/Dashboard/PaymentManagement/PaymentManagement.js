@@ -10,7 +10,7 @@ const PaymentManagement = () => {
 
   const [payments, setPayments] = useState([]);
   useEffect(() => {
-    fetch(`https://secure-wildwood-53933.herokuapp.com/payments`)
+    fetch(`http://localhost:5000/payments`)
       .then((res) => res.json())
       .then((data) => setPayments(data));
   }, []);

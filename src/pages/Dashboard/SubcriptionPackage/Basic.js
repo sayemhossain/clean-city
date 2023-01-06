@@ -15,7 +15,7 @@ const Basic = () => {
 
     const packageData = { name, email, nameOfMonth, packageName, price };
 
-    fetch(`https://secure-wildwood-53933.herokuapp.com/package`, {
+    fetch(`http://localhost:5000/package`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
