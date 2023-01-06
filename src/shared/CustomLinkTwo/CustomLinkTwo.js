@@ -8,7 +8,7 @@ function CustomLinkTwo({ children, to, ...props }) {
     <div>
       <Link
         style={{
-          backgroundColor: match ? "#B10F3C" : "#F5F5F5",
+          backgroundColor: match ? "#1F62C7" : "#F5F5F5",
           color: match ? "#FFFFFF" : "#374156",
         }}
         to={to}

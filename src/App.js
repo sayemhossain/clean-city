@@ -27,6 +27,7 @@ import LetesNewsDetails from "./pages/Home/LatestNews/LetesNewsDetails";
 import OurHistory from "./pages/Home/WhyUs/OurHistory";
 import OurMission from "./pages/Home/WhyUs/OurMission";
 import OurVision from "./pages/Home/WhyUs/OurVision";
+import Products from "./pages/Products/Products";
 import Footer from "./shared/Footer/Footer";
 import Login from "./shared/Login/Login";
 import Navbar from "./shared/Navbar/Navbar";
@@ -104,6 +105,7 @@ function App() {
           <Route path="alluser" element={<AllUser></AllUser>}></Route>
           <Route path="alladmin" element={<AllAdmin></AllAdmin>}></Route>
         </Route>
+        <Route path="/products" element={<Products />}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>

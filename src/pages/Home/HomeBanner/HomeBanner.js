@@ -2,7 +2,7 @@ import React from "react";
 import banner from "../../../img/banner.jpg";
 import Slider from "react-slick";
 import banner5 from "../../../img/banner5.jpeg";
-import banner3 from "../../../img/banner3.jpg";
+import banner3 from "../../../img/banner/banner.png";
 import { Link } from "react-router-dom";
 
 const HomeBanner = () => {

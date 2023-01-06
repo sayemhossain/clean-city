@@ -11,7 +11,7 @@ import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../../firebase.init";
-import logo from "../../img/logo.svg";
+import logo from "../../img/logo.png";
 import SupNavbar from "./SupNavbar";
 
 const Navbar = () => {
@@ -80,12 +80,9 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <Link to="/">
-            <FontAwesomeIcon
-              className="text-3xl text-secondary "
-              icon={faTrashCan}
-            ></FontAwesomeIcon>{" "}
-            <span className="text-xl uppercase font-semibold">Clean City</span>
+          <Link className="flex gap-1 items-center" to="/">
+            <img className="w-8 h-8" src={logo} alt="" />
+            <span className="text-xl uppercase font-semibold">E-Hawkar</span>
           </Link>
         </div>
         <div class="navbar-center hidden lg:flex">
@@ -94,10 +91,15 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </li>
             {user && (
-              <li>
-                <Link to="/dashboard">Dashboard</Link>
-              </li>
+              <>
+                <li>
+                  <Link to="/dashboard">Dashboard</Link>
+                </li>
+              </>
             )}
+            <li>
+              <Link to="/products">Products</Link>
+            </li>
             <li>
               <Link to="/blogs">Blogs</Link>
             </li>

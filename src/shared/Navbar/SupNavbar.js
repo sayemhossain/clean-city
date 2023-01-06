@@ -29,14 +29,14 @@ const SupNavbar = () => {
               className="text-secondary"
               icon={faPhone}
             ></FontAwesomeIcon>
-            <p>Call Us : +880 01766069458</p>
+            <p>Call Us : +88 01766069458</p>
           </div>
           <div className="flex gap-1 items-center border-l-2 pl-2">
             <FontAwesomeIcon
               className="text-secondary"
               icon={faEnvelope}
             ></FontAwesomeIcon>
-            <p>Mail : cleancity@gmail.com</p>
+            <p>Email : ehawkar@gmail.com</p>
           </div>
         </div>
         <div className="flex gap-5 items-center">

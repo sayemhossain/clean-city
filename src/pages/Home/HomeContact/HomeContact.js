@@ -61,8 +61,8 @@ const HomeContact = () => {
               </div>
             </div>
             <div className="mt-3">
-              <p>cleancity@gmail.com</p>
-              <p className="mt-1">cleancity.info@gamil.com</p>
+              <p>ehawkar@gmail.com</p>
+              <p className="mt-1">ehawkar.info@gamil.com</p>
             </div>
           </div>
           <div className="bg-[#faffcc] p-7 rounded-lg shadow-md">
@@ -79,8 +79,8 @@ const HomeContact = () => {
               </div>
             </div>
             <div className="mt-3">
-              <p>+880 01766069458</p>
-              <p className="mt-1">+880 01788156221</p>
+              <p>+880 1766069458</p>
+              <p className="mt-1">+880 1776507871</p>
             </div>
           </div>
           <div className="bg-[#F0FFFC] p-7 rounded-lg shadow-md">
@@ -98,7 +98,7 @@ const HomeContact = () => {
             </div>
             <div className="mt-3">
               <p>Dhanmondi-32, Dhaka-1230</p>
-              <p className="mt-1">Bosila, Mohammadpur, Dhaka-1230</p>
+              <p className="mt-1">Badda, Dhaka-1212</p>
             </div>
           </div>
         </div>

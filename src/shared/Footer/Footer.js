@@ -1,7 +1,7 @@
 import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import logo from "../../img/logo.svg";
+import logo from "../../img/logo.png";
 
 const Footer = () => {
   return (
@@ -38,18 +38,15 @@ const Footer = () => {
           </div>
           <div className="text-gray-300">
             <div className="">
-              <h3 className="text-center">
-                <FontAwesomeIcon
-                  className="text-4xl text-secondary "
-                  icon={faTrashCan}
-                ></FontAwesomeIcon>{" "}
+              <h3 className="text-center flex items-center gap-1">
+                <img className="h-7 w-7" src={logo} alt="" />
                 <span className="text-sm uppercase font-semibold">
-                  Clean City
+                  E-Hawkar
                 </span>
               </h3>
             </div>
             <p>
-              Clean City.
+              E-Hawkar.
               <br />
               Providing reliable tech since 2021
             </p>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../../img/logo.svg";
+import logo from "../../img/logo.png";
 import googleLogo from "../../img/google.svg";
 import {
   useCreateUserWithEmailAndPassword,
@@ -56,13 +56,10 @@ const Signup = () => {
         <div className="shadow-lg p-5 w-96 rounded-lg">
           <div className="mb-5">
             <div className="mb-5">
-              <h3 className="text-center">
-                <FontAwesomeIcon
-                  className="text-xl text-secondary "
-                  icon={faTrashCan}
-                ></FontAwesomeIcon>{" "}
+              <h3 className="text-center flex items-center gap-1 justify-center">
+                <img className="h-7 w-7" src={logo} alt="" />
                 <span className="text-sm uppercase font-semibold">
-                  Clean City
+                  E-Hawkar
                 </span>
               </h3>
               <h1 className="text-center mt-2 text-2xl font-bold">
