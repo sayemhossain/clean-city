@@ -8,7 +8,7 @@ const LatestNewsContainer = ({ blog }) => {
   const navigate = useNavigate();
 
   console.log(blog);
-  const navigateToBlogDetails = () => {
+  const navigateToBlogDetails = (_id) => {
     navigate(`/blogs/${_id}`);
   };
   return (

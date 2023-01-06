@@ -57,7 +57,7 @@ const HomeBanner = () => {
               <div>
                 <h1 className="text-2xl md:text-4xl mb-2  font-semibold">
                   <span className="text-sm md:text-2xl text-secondary">
-                    Waste
+                    User Products
                   </span>{" "}
                   <br /> Management
                 </h1>

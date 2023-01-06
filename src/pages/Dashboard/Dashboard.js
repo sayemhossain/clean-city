@@ -14,6 +14,10 @@ import {
   faMoneyBillWave,
   faUsers,
   faLayerGroup,
+  faMartiniGlassCitrus,
+  faListDots,
+  faPaperclip,
+  faList12,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { signOut } from "firebase/auth";
@@ -89,13 +93,19 @@ const Dashboard = () => {
             </li>
             <li>
               <Link className="" to="/dashboard/subcriptionpackage">
-                <FontAwesomeIcon icon={faDumpster}></FontAwesomeIcon> House
-                Waste
+                <FontAwesomeIcon icon={faPaperclip}></FontAwesomeIcon> Manage
+                Your Products
               </Link>
             </li>
             <li>
               <Link className="" to="/dashboard">
                 <FontAwesomeIcon icon={faListCheck}></FontAwesomeIcon> Order
+                History
+              </Link>
+            </li>
+            <li>
+              <Link className="" to="/dashboard">
+                <FontAwesomeIcon icon={faList12}></FontAwesomeIcon> Sells
                 History
               </Link>
             </li>

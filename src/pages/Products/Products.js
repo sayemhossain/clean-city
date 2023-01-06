@@ -16,7 +16,7 @@ const Products = () => {
 
   return (
     <div className="md:px-20 py-10">
-      <div className="grid grid-cols-1 md:grid-cols-6 gap-3">
+      <div className="grid grid-cols-2 md:grid-cols-6 gap-3">
         {products.map((product) => (
           <ProductsContainer product={product}></ProductsContainer>
         ))}

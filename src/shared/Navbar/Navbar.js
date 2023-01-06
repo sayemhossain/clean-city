@@ -1,5 +1,6 @@
 import {
   faAngleDown,
+  faShoppingCart,
   faTrashCan,
   faTrashCanArrowUp,
   faTrashRestore,
@@ -109,17 +110,27 @@ const Navbar = () => {
             <li>
               <Link to="/about">About</Link>
             </li>
+            <li>
+              <Link to="/about">
+                <div
+                  className="tooltip tooltip-open tooltip-warning  tooltip-right"
+                  data-tip="0"
+                >
+                  <FontAwesomeIcon
+                    className="text-gray-600"
+                    icon={faShoppingCart}
+                  ></FontAwesomeIcon>
+                </div>
+              </Link>
+            </li>
           </ul>
         </div>
         <div class="navbar-end">
           {user ? (
             <div class="dropdown dropdown-end">
               <label tabindex="0" class="flex">
-                <p className="w-6 h-6 bg-secondary rounded-full flex items-center justify-center">
-                  <FontAwesomeIcon
-                    className="text-primary "
-                    icon={faUser}
-                  ></FontAwesomeIcon>
+                <p className="w-6 h-6 ring-2 rounded-full flex items-center justify-center">
+                  <img className="rounded-full" src={user.photoURL} alt="" />
                 </p>
                 <div className="flex items-center gap-2">
                   <p className="ml-2 font-semibold uppercase hover:cursor-pointer">

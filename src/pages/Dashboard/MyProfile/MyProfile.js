@@ -17,6 +17,7 @@ const MyProfile = () => {
       .then((data) => setUserInfo(data));
   }, [user]);
 
+  console.log(user);
   return (
     <div>
       <h3
@@ -26,14 +27,11 @@ const MyProfile = () => {
         User Profile
       </h3>
       <hr />
-      <div className="bg-primary  flex justify-center md:pt-10 ">
+      <div className="bg-primary flex justify-center md:pt-10 ">
         <div className="shadow-lg bg-gray-100 w-full md:mx-20 rounded-lg mb-10 pt-5 pb-10">
           <div className="text-center p-5">
-            <div className="bg-primary w-28 h-28 rounded-full flex items-center justify-center mx-auto">
-              <FontAwesomeIcon
-                className="text-7xl bg"
-                icon={faUserLarge}
-              ></FontAwesomeIcon>
+            <div className="bg-primary w-28 h-28 ring-2 ring-offset-blue-100 rounded-full flex items-center justify-center mx-auto">
+              <img className="rounded-full" src={user.photoURL} alt="" />
             </div>
             <h1 className="mt-2 text-xl uppercase">{user.displayName}</h1>
           </div>
