@@ -9,13 +9,15 @@ import { toast, ToastContainer } from "react-toastify";
 const AllAdminRow = ({ admin, index }) => {
   const { email } = admin;
   const handleRemoveAdmin = () => {
-    fetch(`http://localhost:5000/user/${email}`, {
-      method: "DELETE",
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        toast("Delete successfull.");
-      });
+    if (window.confirm("Are you sure ! You want to remove this admin?")) {
+      fetch(`http://localhost:5000/user/${email}`, {
+        method: "DELETE",
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          toast("Delete successfull.");
+        });
+    }
   };
   return (
     <tr>

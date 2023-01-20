@@ -1,5 +1,5 @@
 import React from "react";
-import { faShield } from "@fortawesome/free-solid-svg-icons";
+import { faBan, faShield } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { toast, ToastContainer } from "react-toastify";
 
@@ -9,6 +9,14 @@ const AllUserRow = ({ user, index }) => {
   return (
     <tr>
       <td>{index + 1}</td>
+      <td>
+        <div className="w-6 h-6 rounded-full flex items-center justify-center bg-error">
+          <FontAwesomeIcon
+            className="text-white "
+            icon={faBan}
+          ></FontAwesomeIcon>
+        </div>
+      </td>
       <td>{email}</td>
       <td>{user.address}</td>
       <td>{user.phone}</td>

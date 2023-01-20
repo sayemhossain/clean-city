@@ -16,8 +16,8 @@ const MakeAdmin = () => {
       <hr />
       <div class="drawer drawer-mobile pb-10  bg-primary">
         <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-        <div class="drawer-content flex flex-col items-center mt-5">
-          <div className="md:w-[800px] md:pb-10  p-2 bg-gray-100 rounded-lg">
+        <div class="drawer-content mt-5 md:px-10">
+          <div className=" md:pb-10  p-2 bg-gray-100 rounded-lg">
             <div class="overflow-x-auto">
               <table class="table table-compact w-full">
                 <thead>

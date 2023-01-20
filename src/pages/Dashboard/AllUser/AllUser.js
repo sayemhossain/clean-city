@@ -23,6 +23,7 @@ const AllUser = () => {
                 <thead>
                   <tr>
                     <th>No.</th>
+                    <th>Disable</th>
                     <th>Email</th>
                     <th>Address</th>
                     <th>Phone</th>
