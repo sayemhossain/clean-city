@@ -8,14 +8,19 @@ const OurMission = () => {
     <div className="md:mt-12">
       <div className="md:grid grid-cols-2 gap-5">
         <div className="">
-          <img className="rounded-sm" src={ourMissionImg} alt="" />
+          <img
+            className="rounded-sm h-96"
+            src="http://www.minimalistnewbies.com/wp-content/uploads/2016/12/img_2489-2.jpg"
+            alt=""
+          />
         </div>
         <div className="mt-3">
           <p>
-            It will save our users valuable time.It will create a job
-            place,Those who work under our platform they will get a profit.There
-            are so many people who haven’t enough time to clean their garbage in
-            that case, our worker helped them to clean out.
+            Many products can create huge problems in our daily life. They are
+            lying around our house. These look very bad. There is a reason
+            behind it The main reason is a manual management system. So we want
+            to create an online base platform where we can sell products very
+            easily.
           </p>
           <div className="mt-5">
             <p className="text-sm">

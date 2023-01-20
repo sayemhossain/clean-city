@@ -4,6 +4,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { toast, ToastContainer } from "react-toastify";
 
 const AllAdminRow = ({ admin, index }) => {
   const { email } = admin;
@@ -13,7 +14,7 @@ const AllAdminRow = ({ admin, index }) => {
     })
       .then((res) => res.json())
       .then((data) => {
-        alert("Delete successfull.");
+        toast("Delete successfull.");
       });
   };
   return (
@@ -23,11 +24,12 @@ const AllAdminRow = ({ admin, index }) => {
       <td>
         <p
           onClick={handleRemoveAdmin}
-          className="bg-secondary w-7 h-7 rounded-full flex justify-center items-center text-white hover:cursor-pointer hover:scale-95"
+          className="bg-error w-7 h-7 rounded-full flex justify-center items-center text-white hover:cursor-pointer hover:scale-95"
         >
           <FontAwesomeIcon icon={faTrashCan}></FontAwesomeIcon>
         </p>
       </td>
+      <ToastContainer></ToastContainer>
     </tr>
   );
 };

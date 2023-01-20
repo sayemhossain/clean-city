@@ -1,8 +1,8 @@
 import React from "react";
 import useUser from "../../../hooks/useUser";
-import AllUserRow from "./AllUserRow";
+import MakeAdminRow from "./MakeAdminRow";
 
-const AllUser = () => {
+const MakeAdmin = () => {
   const [users, setUsers] = useUser([]);
 
   return (
@@ -11,35 +11,29 @@ const AllUser = () => {
         className="text-xl md:px-20 mt-5 text-center "
         style={{ fontFamily: "Teko" }}
       >
-        All User
+        Make Admin
       </h3>
       <hr />
       <div class="drawer drawer-mobile pb-10  bg-primary">
         <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-        <div class="drawer-content mt-5 md:px-10">
-          <div className="md:pb-10  p-2 bg-gray-100 rounded-lg">
+        <div class="drawer-content flex flex-col items-center mt-5">
+          <div className="md:w-[800px] md:pb-10  p-2 bg-gray-100 rounded-lg">
             <div class="overflow-x-auto">
               <table class="table table-compact w-full">
                 <thead>
                   <tr>
                     <th>No.</th>
                     <th>Email</th>
-                    <th>Address</th>
-                    <th>Phone</th>
-                    <th>Age</th>
-                    <th>Gender</th>
-                    <th>Religion</th>
-                    <th>Nationality</th>
-                    <th>Profession</th>
+                    <th>Make Admin</th>
                   </tr>
                 </thead>
                 <tbody>
                   {users?.map((user, index) => (
-                    <AllUserRow
+                    <MakeAdminRow
                       key={user._id}
                       user={user}
                       index={index}
-                    ></AllUserRow>
+                    ></MakeAdminRow>
                   ))}
                 </tbody>
               </table>
@@ -51,4 +45,4 @@ const AllUser = () => {
   );
 };
 
-export default AllUser;
+export default MakeAdmin;

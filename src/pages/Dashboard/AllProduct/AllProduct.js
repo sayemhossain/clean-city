@@ -23,8 +23,6 @@ const AllProduct = () => {
                   <tr>
                     <th>No.</th>
                     <th>Product Name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
                     <th>Price</th>
                     <th>Address</th>
                     <th>Category</th>

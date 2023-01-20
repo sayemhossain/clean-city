@@ -46,7 +46,7 @@ const HomeBanner = () => {
               <div className="mt-5 md:mt-0">
                 <img
                   className="w-[650px] h-[350px] rounded-xl shadow-lg"
-                  src={banner3}
+                  src="https://media.istockphoto.com/id/1262901956/photo/nobody-at-garage-sale.jpg?s=612x612&w=0&k=20&c=9CcrG3EviEMpAiGHWOZcD2bhV8jy-zJMYxSkbi37oiM="
                   alt=""
                 />
               </div>
@@ -104,7 +104,7 @@ const HomeBanner = () => {
               <div className="mt-5 md:mt-0">
                 <img
                   className="w-[650px] h-[350px] rounded-xl shadow-lg"
-                  src={banner}
+                  src="https://www.theglobeandmail.com/resizer/PZDzRW1bcqmfrvFAbMJScPynCao=/1200x676/filters:quality(80)/cloudfront-us-east-1.images.arcpublishing.com/tgam/6BBTWYS7GJFD7IVQRXYJM7HYIU"
                   alt=""
                 />
               </div>

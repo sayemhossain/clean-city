@@ -18,6 +18,8 @@ import {
   faListDots,
   faPaperclip,
   faList12,
+  faPowerOff,
+  faShieldBlank,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { signOut } from "firebase/auth";
@@ -92,7 +94,7 @@ const Dashboard = () => {
               </Link>
             </li>
             <li>
-              <Link className="" to="/dashboard/subcriptionpackage">
+              <Link className="" to="/dashboard/your-products">
                 <FontAwesomeIcon icon={faPaperclip}></FontAwesomeIcon> Manage
                 Your Products
               </Link>
@@ -116,12 +118,6 @@ const Dashboard = () => {
               </Link>
             </li>
             <li>
-              <Link className="" to="/dashboard/subcriptionpackage">
-                <FontAwesomeIcon icon={faBoxOpen}></FontAwesomeIcon>
-                Subscription Package
-              </Link>
-            </li>
-            <li>
               <Link className="" to="/dashboard/accountsettings">
                 <FontAwesomeIcon icon={faAddressCard}></FontAwesomeIcon> Account
                 Setting
@@ -138,21 +134,15 @@ const Dashboard = () => {
             {admin && (
               <div>
                 <li>
-                  <Link className="" to="/dashboard/allproduct">
-                    <FontAwesomeIcon icon={faLayerGroup}></FontAwesomeIcon>
-                    All Product
-                  </Link>
-                </li>
-                <li>
                   <Link className="" to="/dashboard/managecontact">
                     <FontAwesomeIcon icon={faAddressBook}></FontAwesomeIcon>
                     Manage Contact
                   </Link>
                 </li>
                 <li>
-                  <Link className="" to="/dashboard">
-                    <FontAwesomeIcon icon={faSliders}></FontAwesomeIcon> Manage
-                    Selling Product
+                  <Link className="" to="/dashboard/manage-products">
+                    <FontAwesomeIcon icon={faLayerGroup}></FontAwesomeIcon>
+                    Product Management
                   </Link>
                 </li>
 
@@ -171,13 +161,19 @@ const Dashboard = () => {
                 <li>
                   <Link className="" to="/dashboard/alluser">
                     <FontAwesomeIcon icon={faUsers}></FontAwesomeIcon>
-                    All User
+                    User
+                  </Link>
+                </li>
+                <li>
+                  <Link className="" to="/dashboard/make-admin">
+                    <FontAwesomeIcon icon={faShieldBlank}></FontAwesomeIcon>
+                    Make Admin
                   </Link>
                 </li>
                 <li>
                   <Link className="" to="/dashboard/alladmin">
                     <FontAwesomeIcon icon={faShieldHalved}></FontAwesomeIcon>
-                    All Admin
+                    Admin Panel
                   </Link>
                 </li>
               </div>

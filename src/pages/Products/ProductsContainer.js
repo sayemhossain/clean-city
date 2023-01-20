@@ -1,10 +1,20 @@
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const ProductsContainer = ({ product }) => {
+  const { _id } = product;
+  const navigate = useNavigate();
+
+  const navigateToProductsDetails = (_id) => {
+    navigate(`/products/${_id}`);
+  };
   return (
-    <div className="hover:shadow-lg">
+    <div
+      onClick={() => navigateToProductsDetails(_id)}
+      className="hover:shadow-lg"
+    >
       <div className="h-32 md:w-full overflow-hidden">
         <img className="md:w-full" src={product.img} alt="" />
       </div>
@@ -16,9 +26,9 @@ const ProductsContainer = ({ product }) => {
         </h3>
         <p className="text-xs text-gray-400 mt-2">
           <small>
-            {product.des.length > 60
-              ? product.des.slice(0, 60) + "..."
-              : product.des}
+            {product?.des.length > 60
+              ? product?.des.slice(0, 60) + "..."
+              : product?.des}
           </small>
         </p>
         <div className="absolute bottom-2">

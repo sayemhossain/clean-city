@@ -89,7 +89,7 @@ const Footer = () => {
             </a>
           </div>
           <div class="items-center grid-flow-col mx-auto">
-            <p>Copyright © 2022 - All right reserved</p>
+            <p>Copyright © 2023 - All right reserved</p>
           </div>
         </div>
       </footer>

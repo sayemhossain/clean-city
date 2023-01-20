@@ -31,7 +31,7 @@ const Branding = () => {
         <div className="text-center shadow-lg rounded-xl p-4 bg-[#F9F8FE] hover:shadow-md duration-300">
           <img className="w-14 mx-auto" src={photo3} alt="" />
           <h2 className="mt-5 mb-2 font-semibold text-secondary">
-            Waste Collection
+            Used Products Management
           </h2>
           <p>
             We dispose most industrial item's waste appropriately and neatly.

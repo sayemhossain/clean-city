@@ -8,6 +8,7 @@ import AllAdmin from "./pages/Dashboard/AllAdmin/AllAdmin";
 import AllProduct from "./pages/Dashboard/AllProduct/AllProduct";
 import AllUser from "./pages/Dashboard/AllUser/AllUser";
 import Dashboard from "./pages/Dashboard/Dashboard";
+import MakeAdmin from "./pages/Dashboard/MakeAdmin/MakeAdmin";
 import ManageContact from "./pages/Dashboard/ManageContact/ManageContact";
 import MyProfile from "./pages/Dashboard/MyProfile/MyProfile";
 import PackageManagement from "./pages/Dashboard/PackageManagement/PackageManagement";
@@ -17,6 +18,7 @@ import Payment from "./pages/Dashboard/Payment/Payment";
 import PaymentStatus from "./pages/Dashboard/Payment/PaymentStatus";
 import Rocket from "./pages/Dashboard/Payment/Rocket";
 import PaymentManagement from "./pages/Dashboard/PaymentManagement/PaymentManagement";
+import ProductsManagement from "./pages/Dashboard/ProductsManagement/ProductsManagement";
 import SellProducts from "./pages/Dashboard/SellProducts/SellProducts";
 import Basic from "./pages/Dashboard/SubcriptionPackage/Basic";
 import Premium from "./pages/Dashboard/SubcriptionPackage/Premium";
@@ -27,7 +29,9 @@ import LetesNewsDetails from "./pages/Home/LatestNews/LetesNewsDetails";
 import OurHistory from "./pages/Home/WhyUs/OurHistory";
 import OurMission from "./pages/Home/WhyUs/OurMission";
 import OurVision from "./pages/Home/WhyUs/OurVision";
+import ManageUserProducts from "./pages/Products/ManageUserProducts";
 import Products from "./pages/Products/Products";
+import ProductsDetails from "./pages/Products/ProductsDetails";
 import Footer from "./shared/Footer/Footer";
 import Login from "./shared/Login/Login";
 import Navbar from "./shared/Navbar/Navbar";
@@ -60,6 +64,10 @@ function App() {
         >
           <Route index element={<MyProfile></MyProfile>}></Route>
           <Route path="myprofile" element={<MyProfile></MyProfile>}></Route>
+          <Route
+            path="your-products"
+            element={<ManageUserProducts></ManageUserProducts>}
+          ></Route>
           <Route
             path="sellproduct"
             element={<SellProducts></SellProducts>}
@@ -99,13 +107,23 @@ function App() {
             element={<PaymentManagement></PaymentManagement>}
           ></Route>
           <Route
+            path="manage-products"
+            element={<ProductsManagement></ProductsManagement>}
+          ></Route>
+          <Route
             path="managepackage"
             element={<PackageManagement></PackageManagement>}
           ></Route>
           <Route path="alluser" element={<AllUser></AllUser>}></Route>
+          <Route path="make-admin" element={<MakeAdmin></MakeAdmin>}></Route>
           <Route path="alladmin" element={<AllAdmin></AllAdmin>}></Route>
         </Route>
         <Route path="/products" element={<Products />}></Route>
+        <Route
+          path="/products/:productsId"
+          element={<ProductsDetails></ProductsDetails>}
+        ></Route>
+
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>

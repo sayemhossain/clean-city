@@ -10,14 +10,14 @@ const MyProfile = () => {
   const [userInfo, setUserInfo] = useState([]);
 
   const email = user?.email;
-  const url = `http://localhost:5000/user/${email}`;
+
   useEffect(() => {
-    fetch(url)
+    fetch(`http://localhost:5000/user/${email}`)
       .then((res) => res.json())
       .then((data) => setUserInfo(data));
   }, [user]);
 
-  console.log(user);
+  console.log(userInfo);
   return (
     <div>
       <h3
