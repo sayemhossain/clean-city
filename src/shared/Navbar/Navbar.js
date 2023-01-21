@@ -15,7 +15,7 @@ import { auth } from "../../firebase.init";
 import logo from "../../img/logo.png";
 import SupNavbar from "./SupNavbar";
 
-const Navbar = () => {
+const Navbar = ({ cartItems }) => {
   const navigate = useNavigate();
   const [user] = useAuthState(auth);
   // console.log(user);
@@ -23,6 +23,9 @@ const Navbar = () => {
     signOut(auth);
     navigate("/");
   };
+
+  const LocalCartItem = localStorage.getItem("cartItem");
+  const items = JSON.parse(LocalCartItem);
   return (
     <div className="shadow-md">
       <div className="hidden md:block">
@@ -111,10 +114,10 @@ const Navbar = () => {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/about">
+              <Link to="/cart">
                 <div
                   className="tooltip tooltip-open tooltip-warning  tooltip-right"
-                  data-tip="0"
+                  data-tip={!cartItems ? "0" : cartItems.length}
                 >
                   <FontAwesomeIcon
                     className="text-gray-600"

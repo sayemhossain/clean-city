@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
 import "./App.css";
 import About from "./pages/About/About";
 import Blogs from "./pages/Blogs/Blogs";
+import Cart from "./pages/Cart/Cart";
+import Checkout from "./pages/Checkout/Checkout";
 import Contact from "./pages/Contact/Contact";
 import AccountSettings from "./pages/Dashboard/AccountSettings/AccountSettings";
 import AllAdmin from "./pages/Dashboard/AllAdmin/AllAdmin";
@@ -11,6 +15,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import MakeAdmin from "./pages/Dashboard/MakeAdmin/MakeAdmin";
 import ManageContact from "./pages/Dashboard/ManageContact/ManageContact";
 import MyProfile from "./pages/Dashboard/MyProfile/MyProfile";
+import OrderHistory from "./pages/Dashboard/OrderHistory/OrderHistory";
 import PackageManagement from "./pages/Dashboard/PackageManagement/PackageManagement";
 import Bkash from "./pages/Dashboard/Payment/Bkash";
 import Nagad from "./pages/Dashboard/Payment/Nagad";
@@ -39,9 +44,15 @@ import RequireAuth from "./shared/RequireAuth/RequireAuth";
 import Signup from "./shared/Signup/Signup";
 
 function App() {
+  const [cartItems, setCartItems] = useState([]);
+  const handleCart = (product) => {
+    setCartItems([...cartItems, product]);
+    localStorage.setItem("cartItem", JSON.stringify([...cartItems, product]));
+    toast("Added to successfully !");
+  };
   return (
     <div>
-      <Navbar></Navbar>
+      <Navbar cartItems={cartItems}></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}>
           <Route index element={<OurMission></OurMission>}></Route>
@@ -71,6 +82,10 @@ function App() {
           <Route
             path="sellproduct"
             element={<SellProducts></SellProducts>}
+          ></Route>
+          <Route
+            path="order-history"
+            element={<OrderHistory></OrderHistory>}
           ></Route>
           <Route
             path="subcriptionpackage"
@@ -118,7 +133,22 @@ function App() {
           <Route path="make-admin" element={<MakeAdmin></MakeAdmin>}></Route>
           <Route path="alladmin" element={<AllAdmin></AllAdmin>}></Route>
         </Route>
-        <Route path="/products" element={<Products />}></Route>
+        <Route
+          path="/products"
+          element={<Products handleCart={handleCart} />}
+        ></Route>
+        <Route
+          path="/cart"
+          element={<Cart setCartItems={setCartItems} cartItems={cartItems} />}
+        ></Route>
+        <Route
+          path="/checkout"
+          element={
+            <RequireAuth>
+              <Checkout cartItems={cartItems}></Checkout>
+            </RequireAuth>
+          }
+        ></Route>
         <Route
           path="/products/:productsId"
           element={<ProductsDetails></ProductsDetails>}
@@ -130,6 +160,7 @@ function App() {
         <Route path="/signup" element={<Signup></Signup>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </div>
   );
 }

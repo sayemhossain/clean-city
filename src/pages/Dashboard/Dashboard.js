@@ -100,7 +100,7 @@ const Dashboard = () => {
               </Link>
             </li>
             <li>
-              <Link className="" to="/dashboard">
+              <Link className="" to="/dashboard/order-history">
                 <FontAwesomeIcon icon={faListCheck}></FontAwesomeIcon> Order
                 History
               </Link>

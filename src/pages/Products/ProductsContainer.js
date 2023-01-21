@@ -3,8 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const ProductsContainer = ({ product }) => {
-  const [cart, setCart] = useState([]);
+const ProductsContainer = ({ product, handleCart }) => {
   const { _id } = product;
   const navigate = useNavigate();
 
@@ -12,11 +11,6 @@ const ProductsContainer = ({ product }) => {
     navigate(`/products/${_id}`);
   };
 
-  const cartProducts = [];
-  const handleCart = (product) => {
-    cartProducts.push(product);
-    console.log(cartProducts);
-  };
   return (
     <div className="hover:shadow-lg">
       <div className="h-32 md:w-full overflow-hidden">
@@ -38,15 +32,14 @@ const ProductsContainer = ({ product }) => {
         <div className="absolute bottom-2">
           <div className="text-center gap-3  flex justify-between items-center mt-2">
             <p className="text-red-400 font-semibold">${product.price}</p>
-            <button className="btn btn-xs btn-secondary rounded-full normal-case">
-              BUY NOW
-            </button>
+
             <button
               onClick={() => handleCart(product)}
-              className="bg-gray-100 p-1 flex items-center justify-center rounded-full"
+              className="btn normal-case hover:text-white btn-xs btn-outline btn-secondary rounded-full px-3 cursor-pointer"
             >
+              Add To Cart
               <FontAwesomeIcon
-                className="text-gray-600"
+                className="text-secondary pl-1"
                 icon={faShoppingCart}
               ></FontAwesomeIcon>
             </button>
