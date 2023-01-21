@@ -4,7 +4,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { toast, ToastContainer } from "react-toastify";
 import { auth } from "../../firebase.init";
 
-const Checkout = ({ cartItems }) => {
+const Checkout = ({ cartItems, setCartItems }) => {
   const [user] = useAuthState(auth);
   const email = user?.email;
 
@@ -48,6 +48,7 @@ const Checkout = ({ cartItems }) => {
       .then((data) => {
         toast("Order placed, Please wait for verification !");
       });
+    setCartItems([]);
     e.target.reset();
   };
   return (

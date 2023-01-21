@@ -150,7 +150,10 @@ function App() {
           path="/checkout"
           element={
             <RequireAuth>
-              <Checkout cartItems={cartItems}></Checkout>
+              <Checkout
+                cartItems={cartItems}
+                setCartItems={setCartItems}
+              ></Checkout>
             </RequireAuth>
           }
         ></Route>

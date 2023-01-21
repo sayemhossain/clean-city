@@ -88,7 +88,7 @@ const OrderManagementRow = ({ order, index }) => {
             Cencel
           </p>
         ) : (
-          <p className="text-yellow-500">
+          <p className="text-yellow-400">
             <FontAwesomeIcon icon={faClockRotateLeft}></FontAwesomeIcon> Pending
           </p>
         )}
