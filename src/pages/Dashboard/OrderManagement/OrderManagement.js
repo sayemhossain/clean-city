@@ -38,8 +38,7 @@ const OrderManagement = () => {
               <table class="table table-compact w-full ">
                 <thead>
                   <tr className="bg-primary">
-                    <th>No.</th>
-                    <th className="text-start text-xs">Status</th>
+                    <th className="text-start text-xs">No.</th>
                     <th className="text-start text-xs">Order Details</th>
                     <th className="text-start text-xs">Total Price</th>
                     <th className="text-start text-xs">Payment Method</th>
@@ -49,6 +48,7 @@ const OrderManagement = () => {
                     <th className="text-start text-xs">Confirm Order</th>
                     <th className="text-start text-xs">Cancel Order</th>
                     <th className="text-start text-xs">Delete Order</th>
+                    <th className="text-start text-xs">Status</th>
                   </tr>
                 </thead>
                 <tbody>

@@ -1,6 +1,7 @@
 import {
   faCheck,
   faCheckCircle,
+  faClockRotateLeft,
   faCross,
   faMultiply,
   faTimesCircle,
@@ -14,21 +15,7 @@ const OrderManagementRow = ({ order, index }) => {
   return (
     <tr>
       <td>{index + 1}</td>
-      <td>
-        {order.status === "pending" ? (
-          <p>
-            <FontAwesomeIcon icon={faTimesCircle}></FontAwesomeIcon> Pending
-          </p>
-        ) : (
-          <p>
-            <FontAwesomeIcon
-              className="text-green-400"
-              icon={faCheckCircle}
-            ></FontAwesomeIcon>{" "}
-            Verified
-          </p>
-        )}
-      </td>
+
       <td className="text-xs bg-slate-200 rounded-lg py-5">
         <div className="overflow-x-auto">
           <table className="table w-full">
@@ -60,11 +47,12 @@ const OrderManagementRow = ({ order, index }) => {
           </table>
         </div>
       </td>
-      <td>{order.totalPrice}</td>
+      <td>{order.totalPrice}tk</td>
       <td>{order.paymentMethod}</td>
       <td>{order.paymentNumber}</td>
       <td>{order.transactionNumber}</td>
       <td>{order.shippingAddress}</td>
+
       <td>
         <div className="w-6 flex items-center justify-center rounded-md shadow-md h-6 bg-green-400 cursor-pointer text-white">
           <FontAwesomeIcon icon={faCheck}></FontAwesomeIcon>
@@ -85,6 +73,25 @@ const OrderManagementRow = ({ order, index }) => {
             icon={faTrashCan}
           ></FontAwesomeIcon>
         </div>
+      </td>
+      <td>
+        {order.status === "verified" ? (
+          <p className="text-green-400">
+            <FontAwesomeIcon icon={faCheckCircle}></FontAwesomeIcon> Verified
+          </p>
+        ) : order.status === "cancel" ? (
+          <p className="text-red-400">
+            <FontAwesomeIcon
+              className="text-red-400"
+              icon={faMultiply}
+            ></FontAwesomeIcon>{" "}
+            Cencel
+          </p>
+        ) : (
+          <p className="text-yellow-500">
+            <FontAwesomeIcon icon={faClockRotateLeft}></FontAwesomeIcon> Pending
+          </p>
+        )}
       </td>
     </tr>
   );

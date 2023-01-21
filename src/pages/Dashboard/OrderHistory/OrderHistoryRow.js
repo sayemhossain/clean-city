@@ -1,5 +1,7 @@
 import {
   faCheckCircle,
+  faClockRotateLeft,
+  faMultiply,
   faTimesCircle,
   faTrashCan,
 } from "@fortawesome/free-solid-svg-icons";
@@ -16,17 +18,21 @@ const OrderHistoryRow = ({ order, index }) => {
       <td>{order.transactionNumber}</td>
       <td>{order.shippingAddress}</td>
       <td>
-        {order.status === "pending" ? (
-          <p>
-            <FontAwesomeIcon icon={faTimesCircle}></FontAwesomeIcon> Pending
+        {order.status === "verified" ? (
+          <p className="text-green-400">
+            <FontAwesomeIcon icon={faCheckCircle}></FontAwesomeIcon> Verified
+          </p>
+        ) : order.status === "cancel" ? (
+          <p className="text-red-400">
+            <FontAwesomeIcon
+              className="text-red-400"
+              icon={faMultiply}
+            ></FontAwesomeIcon>{" "}
+            Cencel
           </p>
         ) : (
-          <p>
-            <FontAwesomeIcon
-              className="text-green-400"
-              icon={faCheckCircle}
-            ></FontAwesomeIcon>{" "}
-            Verified
+          <p className="text-yellow-500">
+            <FontAwesomeIcon icon={faClockRotateLeft}></FontAwesomeIcon> Pending
           </p>
         )}
       </td>
