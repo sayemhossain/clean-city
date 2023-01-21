@@ -27,7 +27,7 @@ const OrderHistory = () => {
           className="text-xl md:px-20 mt-5 text-center "
           style={{ fontFamily: "Teko" }}
         >
-          Products Management
+          Order History
         </h3>
       </div>
       <hr className="mb-5" />
@@ -41,7 +41,6 @@ const OrderHistory = () => {
                 <thead>
                   <tr className="bg-primary">
                     <th>No.</th>
-                    <th className="text-start text-xs">Delete</th>
                     <th className="text-start text-xs">Total Price</th>
                     <th className="text-start text-xs">Payment Method</th>
                     <th className="text-start text-xs">Payment Number</th>

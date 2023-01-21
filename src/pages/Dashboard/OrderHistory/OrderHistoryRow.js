@@ -10,12 +10,6 @@ const OrderHistoryRow = ({ order, index }) => {
   return (
     <tr>
       <td>{index + 1}</td>
-
-      <td>
-        <button className="btn btn-xs btn-error text-white">
-          <FontAwesomeIcon icon={faTrashCan}></FontAwesomeIcon>
-        </button>
-      </td>
       <td>{order.totalPrice}</td>
       <td>{order.paymentMethod}</td>
       <td>{order.paymentNumber}</td>
