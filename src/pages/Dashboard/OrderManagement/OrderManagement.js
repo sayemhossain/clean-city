@@ -39,12 +39,16 @@ const OrderManagement = () => {
                 <thead>
                   <tr className="bg-primary">
                     <th>No.</th>
+                    <th className="text-start text-xs">Status</th>
+                    <th className="text-start text-xs">Order Details</th>
                     <th className="text-start text-xs">Total Price</th>
                     <th className="text-start text-xs">Payment Method</th>
                     <th className="text-start text-xs">Payment Number</th>
                     <th className="text-start text-xs">Transaction Number</th>
                     <th className="text-start text-xs">shippingAddress</th>
-                    <th className="text-start text-xs">Status</th>
+                    <th className="text-start text-xs">Confirm Order</th>
+                    <th className="text-start text-xs">Cancel Order</th>
+                    <th className="text-start text-xs">Delete Order</th>
                   </tr>
                 </thead>
                 <tbody>
