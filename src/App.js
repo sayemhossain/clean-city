@@ -16,6 +16,7 @@ import MakeAdmin from "./pages/Dashboard/MakeAdmin/MakeAdmin";
 import ManageContact from "./pages/Dashboard/ManageContact/ManageContact";
 import MyProfile from "./pages/Dashboard/MyProfile/MyProfile";
 import OrderHistory from "./pages/Dashboard/OrderHistory/OrderHistory";
+import OrderManagement from "./pages/Dashboard/OrderManagement/OrderManagement";
 import PackageManagement from "./pages/Dashboard/PackageManagement/PackageManagement";
 import Bkash from "./pages/Dashboard/Payment/Bkash";
 import Nagad from "./pages/Dashboard/Payment/Nagad";
@@ -120,6 +121,10 @@ function App() {
           <Route
             path="paymentmanagement"
             element={<PaymentManagement></PaymentManagement>}
+          ></Route>
+          <Route
+            path="order-management"
+            element={<OrderManagement></OrderManagement>}
           ></Route>
           <Route
             path="manage-products"

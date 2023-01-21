@@ -159,6 +159,12 @@ const Dashboard = () => {
                   </Link>
                 </li>
                 <li>
+                  <Link className="" to="/dashboard/order-management">
+                    <FontAwesomeIcon icon={faMoneyBillWave}></FontAwesomeIcon>
+                    Orders Management
+                  </Link>
+                </li>
+                <li>
                   <Link className="" to="/dashboard/alluser">
                     <FontAwesomeIcon icon={faUsers}></FontAwesomeIcon>
                     User

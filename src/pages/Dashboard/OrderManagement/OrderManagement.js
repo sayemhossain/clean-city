@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../../../firebase.init";
 import Loading from "../../../shared/Loading/Loading";
-import OrderHistoryRow from "./OrderHistoryRow";
+import OrderManagementRow from "./OrderManagementRow";
 
 const OrderManagement = () => {
   const [orders, setOrders] = useState([]);
@@ -49,11 +49,11 @@ const OrderManagement = () => {
                 </thead>
                 <tbody>
                   {orders?.map((order, index) => (
-                    <OrderHistoryRow
+                    <OrderManagementRow
                       key={order._id}
                       order={order}
                       index={index}
-                    ></OrderHistoryRow>
+                    ></OrderManagementRow>
                   ))}
                 </tbody>
               </table>
